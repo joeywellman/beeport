@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Beeport:
+## A Tool for Saving State Honey Bee Populations
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+**Beeport** is designed to assist with the identification of issues and risk factors plaguing West Virginia honey bee populations. Its framework utilizes online portals and comprehensive surveys to collect hive health indicators from beekeepers (_users_) across the state. When users submit reports, the app can immediately generate, populate, and conveniently route electronic apiary registration applications directly to the WVDA’s registrar – fulfilling annual legal obligation(s) that beekeepers have to report hive details.  In addition to handling mandatory documentation, the app can also automate the quantitative analysis of cumulative data submitted and shares objective findings in the form of Colony Loss Evaluations (CLEs).
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is a Front-End Capstone for WV's [NewForce Program](https://newforce.co/).
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+----------------------------------------
+## Tools and Technolgies Utilized
+- [X] Cascading Style Sheets (CSS)
+- [X] [Create React App](https://github.com/facebook/create-react-app)
+- [X] Hypertext Markup Language (HTML)
+- [X] JavaScript
+- [ ] ~~JQuery~~
+- [X] [JavaScript Object Notation](https://github.com/typicode/json-server) (JSON) Server
+- [X] [Materialize](https://materializecss.com/)
+- [X] [React](https://reactjs.org/docs/getting-started.html)
+- [X] [React-Bootstrap](https://react-bootstrap.github.io/)
+- [X] [W3Layouts](https://w3layouts.com/) Responsive Widget Template
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+----------------------------------------
+## View a Demo of Beeport!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Video Demo
 
-### `npm run eject`
+[![Screenshot.jpeg](Link to Video)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Click on the video above or visit https://insertthelinkhere to view the live demo.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+----------------------------------------
+### Testing Locally
+**If you would like to test locally:**
+1. git clone this repo
+2. `npm or yarn install` to pull in all dependencies
+3. Install json-server globally: `npm i -g json-server`
+4. Make a copy of Database/db.backup.json and run `json-server -p 5002 -w *your copy of db.backup.json*`
+5. `npm start` in root directory to start react server
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+----------------------------------------
+## Special Thanks
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ - Jordan, Josh, Kim, Dale's Beard, and the rest of the NewForce Cohort #1 DREAM TEAM for being a fount of challenge, wisdom, and inspiration.
+ - Shaun (Lyft), Jeremy (WVBA), Greg (Toms Creek Family Farm), Korhan (Apimaye), Jack (OTS), Kathy (ENG), Michael (York), and John (RC360) for application proposal and draft review(s), app demoing, knowledgable feedback, and endless insight.
+ 
