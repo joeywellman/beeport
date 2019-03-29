@@ -50,5 +50,6 @@ Click on the video above or visit https://insertthelinkhere to view the live dem
 ## Special Thanks
 
  - Jordan, Josh, Kim, Dale's Beard, and the rest of the NewForce Cohort #1 DREAM TEAM for being a fount of challenge, wisdom, and inspiration.
- - Shaun (Lyft), Jeremy (WVBA), Greg (Toms Creek Family Farm), Korhan (Apimaye), Jack (OTS), Kathy (ENG), Michael (York), and John (RC360) for application proposal and draft review(s), app demoing, knowledgable feedback, and endless insight.
+ - Shaun (Lyft), Jeremy (WVBA), Greg (Toms Creek Family Farm), Korhan (Apimaye), Jack (OTS), Kathy (ENG), Michael (York), and John (RC360) for application proposal and draft reviews, app demoing, knowledgable feedback, and endless insight.
+ - Leah (NSS, Cohort #26) for the awesome example(s):  [GroupTravelApp](https://github.com/leahhoefling/GroupTravelApp)!
  
