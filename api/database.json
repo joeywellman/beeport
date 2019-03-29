@@ -1,0 +1,46 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "",
+        "email": "",
+        "password": "",
+        "nameFirst": "",
+        "nameLast": "",
+        "locationCounty": "",
+        "address1": "",
+        "address2": "",
+        "locationCity": "",
+        "locationState": "",
+        "locationZip": "",
+        "telHome": "",
+        "telCell": "",
+        "telWork": "",
+        "keepBees?": ""
+      }
+    ],
+    "apregs": [
+        {
+        "id": 1,
+        "userId": "5",
+        "numberOfColonies": "",
+        "numberOfApiaries": "",
+        "miteLosses": "",
+        "queenFailureLosses": "",
+        "starvationLosses": "",
+        "otherLosses": "",
+        "splitIncreases": "",
+        "nucIncreases": "",
+        "packageIncreases": "",
+        "swarmIncreases": "",
+        "dateSigned": "",
+        "eFormSignature": "",
+        "inspectionInterstate": "",
+        "inspectionDistribute": "",
+        "inspectionNewBeek": "",
+        "beeBestMgmtPractices?": "",
+        "ePracticesSignature": "",
+        "apiaryRegComplete?": ""
+        }
+    ]
+}
