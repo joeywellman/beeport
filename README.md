@@ -3,7 +3,7 @@
 
 
 
-**Beeport** is designed to assist with the identification of issues and risk factors plaguing West Virginia honey bee populations. Its framework utilizes online portals and comprehensive surveys to collect hive health indicators from beekeepers (_users_) across the state. When users submit reports, the app can immediately generate, populate, and conveniently route electronic apiary registration applications directly to the WVDA’s registrar – fulfilling annual legal obligation(s) that beekeepers have to report hive details.  In addition to handling mandatory documentation, the app can also automate the quantitative analysis of cumulative data submitted and shares objective findings in the form of Colony Loss Evaluations (CLEs).
+**Beeport** is designed to assist with the identification of issues and risk factors plaguing West Virginia honey bee populations. Its framework utilizes online portals and comprehensive surveys to collect hive health indicators from beekeepers (_users_) across the state. When users submit reports, the app can immediately generate, populate, and conveniently route electronic apiary registration applications directly to the WVDA’s registrar – fulfilling annual legal obligation(s) that beekeepers have to report hive details.  In addition to handling mandatory documentation, the app can also automate quantitative evaluations of cumulative data submitted and shares objective findings in the form of Colony Loss Analyses (CLAs).
 
 This is a Front-End Capstone for WV's [NewForce Program](https://newforce.co/).
 
