@@ -1,0 +1,16 @@
+form {
+        text-align:center;
+        margin-top:10vh;
+    }
+
+section {
+        text-align:center;
+    }
+
+label {
+        margin-right:5px;
+    }
+
+input {
+        margin-left:5px;
+    }
