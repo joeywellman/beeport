@@ -1,46 +1,45 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "",
-        "email": "",
-        "password": "",
-        "nameFirst": "",
-        "nameLast": "",
-        "locationCounty": "",
-        "address1": "",
-        "address2": "",
-        "locationCity": "",
-        "locationState": "",
-        "locationZip": "",
-        "telHome": "",
-        "telCell": "",
-        "telWork": "",
-        "keepBees?": ""
-      }
-    ],
-    "apregs": [
-        {
-        "id": 1,
-        "userId": "5",
-        "numberOfColonies": "",
-        "numberOfApiaries": "",
-        "miteLosses": "",
-        "queenFailureLosses": "",
-        "starvationLosses": "",
-        "otherLosses": "",
-        "splitIncreases": "",
-        "nucIncreases": "",
-        "packageIncreases": "",
-        "swarmIncreases": "",
-        "dateSigned": "",
-        "eFormSignature": "",
-        "inspectionInterstate": "",
-        "inspectionDistribute": "",
-        "inspectionNewBeek": "",
-        "beeBestMgmtPractices?": "",
-        "ePracticesSignature": "",
-        "apiaryRegComplete?": ""
-        }
-    ]
+  "users": [
+    {
+      "userName": "d",
+      "userEmail": "d@d.com",
+      "userPassword": "d",
+      "nameFirst": "d",
+      "nameLast": "d",
+      "locationCounty": "d",
+      "address1": "d",
+      "address2": "d",
+      "locationCity": "d",
+      "locationState": "DD",
+      "locationZip": "12345",
+      "telHome": "111-111-1111",
+      "telCell": "111-111-1111",
+      "telWork": "111-111-1111",
+      "keepBees": "Yes",
+      "id": 5
+    }
+  ],
+  "apregs": [
+    {
+      "numberOfColonies": "12",
+      "numberOfApiaries": "1",
+      "location": "fdads",
+      "userId": 5,
+      "id": 10
+    },
+    {
+      "numberOfColonies": "6",
+      "numberOfApiaries": "2",
+      "location": "Dunkirk",
+      "userId": 5,
+      "id": 12
+    },
+    {
+      "numberOfColonies": "6",
+      "numberOfApiaries": "1",
+      "location": "char",
+      "userId": 5,
+      "id": 13
+    }
+  ]
 }
