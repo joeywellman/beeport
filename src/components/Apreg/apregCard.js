@@ -4,21 +4,27 @@ import './apregs.css';
 
 export default class ApregCard extends Component {
   render() {
-
+    var moment = require('moment');
+    var reportDate = moment(this.props.apreg.timestamp).format("YYYY-MM-DD")
     return (
       <div key={this.props.apreg.id} className="card">
         <div className="card-body">
           <h5 className="card-title">
 
-            <p>{this.props.apreg.numberOfColonies}</p>
+            <p><b>Report Name:</b>
+            <br />{this.props.apreg.reportName}</p>
+            <p><b>Report Year:</b>
+            <br />{this.props.apreg.reportYear}</p>
+            <p><b>Report Date:</b>
+            <br />{reportDate}</p>
             <br></br>
-            <p>{this.props.apreg.numberOfApiaries}</p>
-            <p>{this.props.apreg.location}</p>
+            <p><b># of Colonies:</b> {this.props.apreg.totalColonies}</p>
+            <p><b># of Apiaries:</b> {this.props.apreg.totalApiaries}</p>
 
-            <Link className="btn btn-success" to={`/apregs/${this.props.apreg.id}/edit`}>
+            <Link className="btn btn-info" to={`/apregs/${this.props.apreg.id}/edit`}>
               Edit Form
             </Link>
-            <br></br>
+            <br />
             <button
               type="button"
               className="btn btn-danger"

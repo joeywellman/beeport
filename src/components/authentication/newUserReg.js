@@ -94,11 +94,13 @@ export default class NewUserReg extends Component {
                         sessionStorage.setItem("userId", pu.id)
                         this.props.getUserApregs(parseInt(sessionStorage.getItem("userId")))
                         this.props.history.push("/home")
+                        window.location.reload();
 
                     } else {
                         sessionStorage.setItem("userId", pu.id)
                         this.props.getUserApregs(parseInt(sessionStorage.getItem("userId")))
                         this.props.history.push("/home")
+                        window.location.reload();
                     }
                 }
                 )
@@ -109,8 +111,8 @@ export default class NewUserReg extends Component {
     render() {
         return (
             <form onSubmit={this.handleRegister}>
-                <h1>Beeport</h1>
-                <h2 className="h3 mb-3 font-weight-normal">New User Registration</h2>
+                <h1 className="font-weight-bold">Beeport</h1>
+                <h2 className="h3 mb-3 font-weight-bold">New User Registration</h2>
                 <br />
 
                 <label htmlFor="userName">User Name:</label>
@@ -163,7 +165,7 @@ export default class NewUserReg extends Component {
                     required="" autoFocus="" />
                 <br />
 
-                <h2 className="h3 mb-3 font-weight-normal">Beekeeper Information</h2>
+                <h2 className="h3 mb-3 font-weight-bold">Beekeeper Information</h2>
                 <br />
 
                 <label htmlFor="nameFirst">First Name:</label>
@@ -185,7 +187,7 @@ export default class NewUserReg extends Component {
                     required
                 />
                 <br />
-{/* County Selection will be from a Dropdown: */}
+                {/* County Selection will be from a Dropdown: */}
                 <label htmlFor="locationCounty">County:</label>
                 <input
                     onChange={this.handleFieldChange}
@@ -224,7 +226,7 @@ export default class NewUserReg extends Component {
                     required
                 />
                 <br />
-{/* State Selection will be from a Dropdown: */}
+                {/* State Selection will be from a Dropdown: */}
                 <label htmlFor="locationState">State:</label>
                 <input
                     onChange={this.handleFieldChange}
@@ -272,20 +274,23 @@ export default class NewUserReg extends Component {
                     placeholder="304-123-4567"
                 />
                 <br />
-{/* This Will Eventually Be a Dropdown Selection or Checkbox: */}
+                {/* This Will Eventually Be a Dropdown Selection or Checkbox: */}
                 <label htmlFor="keepBees">Are You Still Keeping Bees?:</label>
-                <input
+                <select
                     onChange={this.handleFieldChange}
                     type="text"
                     id="keepBees"
-                    placeholder="Yes"
-                />
+                    value={this.state.keepBees}>
+                    <option value="" placeholder="Select an Answer">Select an Answer:</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
 
                 <br />
                 <br />
                 <br />
 
-                <button type="submit">Register User (Log In) </button>
+                <button type="submit" className="btn btn-success"> <b>Register User (Log In)</b> </button>
             </form>
         )
     }

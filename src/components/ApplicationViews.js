@@ -58,13 +58,13 @@ export default class ApplicationViews extends Component {
 
     getUserApregs = id => {
         return apregsAPIManager.getUserApregs(id)
-            .then(pue => {
-                const ApregsByDate = pue.sort(function (a, b) {
-                    var dateA = new Date(a.date), dateB = new Date(b.date)
-                    return dateA - dateB
+            .then(pua => {
+                const apregsByDate = pua.sort(function (a, b) {
+                    var DateA = new Date(a.timestamp), DateB = new Date(b.timestamp)
+                    return DateA - DateB
                 })
                 this.setState({
-                    apregs: ApregsByDate
+                    apregs: apregsByDate
                 })
             })
     }
@@ -78,6 +78,7 @@ export default class ApplicationViews extends Component {
     render() {
         return (
             <React.Fragment>
+
                 <Route
                     exact
                     path="/"
@@ -105,6 +106,7 @@ export default class ApplicationViews extends Component {
                         }
                     }}
                 />
+
                 <Route exact path="/apregs" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <ApregList {...props} apregs={this.state.apregs} getUserApregs={this.state.getUserApregs} deleteApreg={this.deleteApreg} />
