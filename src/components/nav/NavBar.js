@@ -20,6 +20,9 @@ export default class NavBar extends Component {
                         <Link className="nav-link" to="/apregs">Apiary Registration</Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="nav-link" to="/report">Beek Reports</Link>
+                    </li>
+                    <li className="nav-item">
                         {sessionStorage.getItem("userId") === null &&
                             localStorage.getItem("userId") === null
                             ? (
