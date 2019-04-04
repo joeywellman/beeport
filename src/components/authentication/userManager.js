@@ -28,6 +28,6 @@ export default {
 
     checkUserEmail: (userEmail) => {
         return fetch(`${remoteURL}/users?email=${userEmail}`)
-           .then(su => su.json())
+            .then(su => su.json())
     }
 }

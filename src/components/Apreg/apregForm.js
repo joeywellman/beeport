@@ -126,9 +126,9 @@ export default class ApregForm extends Component {
             <React.Fragment>
                 <form className="apregsForm">
                     <div className="form-group">
-                        <h2>Annual <a href="https://agriculture.wv.gov/divisions/animalhealth/Documents/Annual%20Application%20for%20Apiary%20Registration%202018.pdf" target="_blank" alt="Link to: Physical Copy of Annual Application for Apiary Registration">Application</a> for Apiary Registration</h2>
+                        <h2>Annual <a href="https://agriculture.wv.gov/divisions/animalhealth/Documents/Annual%20Application%20for%20Apiary%20Registration%202018.pdf" target="_blank" alt="Link to: Physical Copy of Annual Application for Apiary Registration" rel="noopener noreferrer">Application</a> for Apiary Registration</h2>
 
-                        <h5>As required by <a href="http://www.wvlegislature.gov/WVCODE/Code.cfm?chap=19&art=13#13" target="_blank" alt="Link to: West Virginia Code; Chapter 19, Agriculture; Article 13, Inspection and Protection of Agriculture.  Note: Article 13 may be cited as The West Virginia Apiary Act."> Code of West Virginia, Chapter 19, Article 13</a></h5>
+                        <h5>As required by <a href="http://www.wvlegislature.gov/WVCODE/Code.cfm?chap=19&art=13#13" target="_blank" rel="noopener noreferrer" alt="Link to: West Virginia Code; Chapter 19, Agriculture; Article 13, Inspection and Protection of Agriculture.  Note: Article 13 may be cited as The West Virginia Apiary Act."> Code of West Virginia, Chapter 19, Article 13</a></h5>
                     </div>
                     <div className="form-group">
                         <label htmlFor="form-header"><b>Name and Date of Your Report:</b>
@@ -325,15 +325,15 @@ export default class ApregForm extends Component {
                         <label htmlFor="form-header"><b>Acknowledgement and Certification of Understanding:</b></label>
                         <br />
                         <p><b>Assistance Available:</b>  At any time, beekeepers needing assistance or having detected diseases or pest invasion, can call WVDA staff (names and numbers <i>listed below</i>) for inspection/assistance. The WVDA is committed to maintaining and promoting healthy colonies in West Virginia for honey production, the sale of bees, and pollination.</p>
-                        <div class="wvda-header_division-inspector-address">
-                            <div><img class="wvda-specialists-inspectors_header-contacts" target="_blank" src="http://drive.google.com/uc?export=view&id=1EZLbHIer3wfzdGVNTxwKdHtOtx2DR_YV" alt="West Virginia Department of Agriculture State Specialists / Inspectors - Click for Link to Contact(s) Page." ></img></div><br />
+                        <div className="wvda-header_division-inspector-address">
+                            <div><img className="wvda-specialists-inspectors_header-contacts" target="_blank" src="http://drive.google.com/uc?export=view&id=1EZLbHIer3wfzdGVNTxwKdHtOtx2DR_YV" alt="West Virginia Department of Agriculture State Specialists / Inspectors - Click for Link to Contact(s) Page." ></img></div><br />
                             <div><p>
-                                <a href="https://agriculture.wv.gov/Pages/default.aspx" target="_blank" alt="Link to WVDA.gov">West Virginia Department of Agriculture</a><br />
-                                <a href="https://goo.gl/maps/8fd4Hv9qQU12" target="_blank" alt="Link to Google Maps for Directions to the WVDA.">1900 Kanawha Boulevard, East<br />
+                                <a href="https://agriculture.wv.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer" alt="Link to WVDA.gov">West Virginia Department of Agriculture</a><br />
+                                <a href="https://goo.gl/maps/8fd4Hv9qQU12" target="_blank" rel="noopener noreferrer" alt="Link to Google Maps for Directions to the WVDA.">1900 Kanawha Boulevard, East<br />
                                     Charleston, WV 25305</a><br />
                                 <a href="tel:1-304-558-2214">(304) 558-2214</a><br />
                             </p></div>
-                            <div><a href="https://agriculture.wv.gov/divisions/animalhealth/Pages/Apiary.aspx" target="_blank">Click Here</a> for Additional Information</div><br />
+                            <div><a href="https://agriculture.wv.gov/divisions/animalhealth/Pages/Apiary.aspx" target="_blank" rel="noopener noreferrer">Click Here</a> for Additional Information</div><br />
                         </div>
                         <p><b>Electronic Signature:</b>  This Acknowledgement and Certification of Understanding
                         ("Acknowledgement") is to let you know that by submitting an electronic signature, you are

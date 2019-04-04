@@ -6,9 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import './index.css'
 
 ReactDOM.render(
-  <Router>
-      <Beeport />
-  </Router>
-  , document.getElementById('root'))
+    <Router>
+        <Beeport />
+    </Router>
+    , document.getElementById('root'))
 
-  serviceWorker.unregister();
+serviceWorker.unregister();

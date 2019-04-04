@@ -4,9 +4,9 @@ import { Pie } from 'react-chartjs-2';
 
 
 export default class Report extends Component {
-    
+
     render() {
-        
+
         const data = {
             labels: [
                 'Test 1',
@@ -27,7 +27,7 @@ export default class Report extends Component {
                 ]
             }]
         };
-        
+
         const options = {
             maintainAspectRatio: false,
             responsive: false,
@@ -45,8 +45,8 @@ export default class Report extends Component {
                 <div className="text-center">
                     This is the Report Page Placeholder
                 </div>
-                <br/>
-                <div style={{ display: 'flex',  justifyContent:'center', alignItems:'center', height: 'auto', width: 'auto', backgroundColor: 'white', position: 'relative' }}>
+                <br />
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'auto', width: 'auto', backgroundColor: 'white', position: 'relative' }}>
                     <Pie data={data} height={150} width={200} options={options} />
                 </div>
             </React.Fragment>
