@@ -23,6 +23,9 @@ export default class NavBar extends Component {
                         <Link className="nav-link" to="/report">Beekeeper Reports</Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="nav-link" to="/report">Resources</Link>
+                    </li>
+                    <li className="nav-item">
                         {sessionStorage.getItem("userId") === null &&
                             localStorage.getItem("userId") === null
                             ? (
