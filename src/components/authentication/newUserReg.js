@@ -189,13 +189,70 @@ export default class NewUserReg extends Component {
                 <br />
                 {/* County Selection will be from a Dropdown: */}
                 <label htmlFor="locationCounty">County:</label>
-                <input
+                <select
                     onChange={this.handleFieldChange}
                     type="text"
                     id="locationCounty"
                     placeholder="Cabell"
                     required
-                />
+                    value={this.state.locationCounty}>
+                    <option value="Choose County">Choose Your County</option>
+                    <option value="Barbour">Barbour</option>
+                    <option value="Berkeley">Berkeley</option>
+                    <option value="Boone">Boone</option>
+                    <option value="Braxton">Braxton</option>
+                    <option value="Brooke">Brooke</option>
+                    <option value="Cabell">Cabell</option>
+                    <option value="Calhoun">Calhoun</option>
+                    <option value="Clay">Clay</option>
+                    <option value="Doddridge">Doddridge</option>
+                    <option value="Fayette">Fayette</option>
+                    <option value="Gilmer">Gilmer</option>
+                    <option value="Grant">Grant</option>
+                    <option value="Greenbrier">Greenbrier</option>
+                    <option value="Hampshire">Hampshire</option>
+                    <option value="Hancock">Hancock</option>
+                    <option value="Hardy">Hardy</option>
+                    <option value="Harrison">Harrison</option>
+                    <option value="Jackson">Jackson</option>
+                    <option value="Jefferson">Jefferson</option>
+                    <option value="Kanawha">Kanawha</option>
+                    <option value="Lewis">Lewis</option>
+                    <option value="Lincoln">Lincoln</option>
+                    <option value="Logan">Logan</option>
+                    <option value="Marion">Marion</option>
+                    <option value="Marshall">Marshall</option>
+                    <option value="Mason">Mason</option>
+                    <option value="McDowell">McDowell</option>
+                    <option value="Mercer">Mercer</option>
+                    <option value="Mineral">Mineral</option>
+                    <option value="Mingo">Mingo</option>
+                    <option value="Monongalia">Monongalia</option>
+                    <option value="Monroe">Monroe</option>
+                    <option value="Morgan">Morgan</option>
+                    <option value="Nicholas">Nicholas</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Pendleton">Pendleton</option>
+                    <option value="Pleasants">Pleasants</option>
+                    <option value="Pocahontas">Pocahontas</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Putnam County">Putnam County</option>
+                    <option value="Raleigh">Raleigh</option>
+                    <option value="Randolph">Randolph</option>
+                    <option value="Ritchie">Ritchie</option>
+                    <option value="Roane">Roane</option>
+                    <option value="Summers">Summers</option>
+                    <option value="Taylor">Taylor</option>
+                    <option value="Tucker">Tucker</option>
+                    <option value="Tyler">Tyler</option>
+                    <option value="Upshur">Upshur</option>
+                    <option value="Wayne">Wayne</option>
+                    <option value="Webster">Webster</option>
+                    <option value="Wetzel">Wetzel</option>
+                    <option value="Wirt">Wirt</option>
+                    <option value="Wood">Wood</option>
+                    <option value="Wyoming">Wyoming</option>
+                </select>
                 <br />
 
                 <label htmlFor="address1">Address 1:</label>
@@ -228,13 +285,65 @@ export default class NewUserReg extends Component {
                 <br />
                 {/* State Selection will be from a Dropdown: */}
                 <label htmlFor="locationState">State:</label>
-                <input
+                <select
                     onChange={this.handleFieldChange}
                     type="text"
                     id="locationState"
                     placeholder="WV"
                     required
-                />
+                    value={this.state.locationState}>
+                    <option value="Choose State">Choose Your State</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Washington">Washington</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
+                </select>
                 <br />
 
                 <label htmlFor="locationZip">Zip Code:</label>

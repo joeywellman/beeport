@@ -17,6 +17,7 @@ import React, { Component } from "react";
 import Login from '../components/authentication/login'
 import NewUserReg from '../components/authentication/newUserReg'
 import Home from '../components/home/home'
+import Report from '../components/report/report'
 import ApregList from '../components/Apreg/apregsList'
 import ApregForm from '../components/Apreg/apregForm'
 import ApregEditForm from '../components/Apreg/apregEditForm'
@@ -101,6 +102,18 @@ export default class ApplicationViews extends Component {
                     render={(props) => {
                         if (this.isAuthenticated()) {
                             return <Home {...props} apregs={this.state.apregs} getUserApregs={this.getUserApregs} />
+                        } else {
+                            return <Redirect to="/" />
+                        }
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/report"
+                    render={(props) => {
+                        if (this.isAuthenticated()) {
+                            return <Report {...props} apregs={this.state.apregs} getUserApregs={this.getUserApregs} />
                         } else {
                             return <Redirect to="/" />
                         }

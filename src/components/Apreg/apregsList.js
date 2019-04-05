@@ -9,6 +9,14 @@ export default class ApregList extends Component {
         return (
             <React.Fragment>
                 <h2>Annual Apiary Registration Submissions</h2>
+                <br />
+                <section className="apregs">
+                    {this.props.apregs.map(apreg => (
+                        <ApregCard key={apreg.id} apreg={apreg} deleteApreg={this.props.deleteApreg} {...this.props} />
+                    ))}
+                </section>
+                <br />
+                <br />
                 <div className="addApregButton">
                     <button type="button"
                         className="btn btn-success"
@@ -19,12 +27,6 @@ export default class ApregList extends Component {
                         Fill Out New Application
                     </button>
                 </div>
-                <br></br>
-                <section className="apregs">
-                    {this.props.apregs.map(apreg => (
-                        <ApregCard key={apreg.id} apreg={apreg} deleteApreg={this.props.deleteApreg} {...this.props} />
-                    ))}
-                </section>
 
             </React.Fragment>
         );
