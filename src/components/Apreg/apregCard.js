@@ -234,11 +234,10 @@ export default class ApregCard extends Component {
               <br />{this.props.apreg.reportName}</p>
             <p><b>Report Year:</b>
               <br />{this.props.apreg.reportYear}</p>
-            <p><b>Report Date:</b>
+            <p className="small"><b>Report Date:</b>
               <br />{reportDate}</p>
-            <br></br>
-            <p><b># of Colonies:</b> {this.props.apreg.totalColonies}</p>
-            <p><b># of Apiaries:</b> {this.props.apreg.totalApiaries}</p>
+            <p className="small"><b># of Colonies:</b> {this.props.apreg.totalColonies}</p>
+            <p className="small"><b># of Apiaries:</b> {this.props.apreg.totalApiaries}</p>
             <br />
             <b>Hive Loss Report by:</b>
             <br />

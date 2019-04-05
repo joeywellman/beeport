@@ -11,6 +11,7 @@
     "react": "^16.8.6",
     "react-chartjs-2": "^2.7.6",
     "react-chartkick": "^0.3.0",
+    "react-countup": "^4.1.2",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"

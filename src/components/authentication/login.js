@@ -43,19 +43,22 @@ export default class Login extends Component {
             userManager.checkUserEmail(this.state.userEmail)
                 .then(su => {
                     console.log(su)
-                    if (su[0].length === 0) {
+                    if (su.length === 0) {
                         alert("That e-mail address was NOT found.  Please register or try to use a different email.")
-                    } if
-                        (su[0].userPassword !== this.state.userPassword) {
-                        alert("That password is NOT correct.  Please try again.")
                     }
-                    else if (this.state.rememberMe === true) {
-                        localStorage.setItem("userId", su[0].id)
+                    if (su[0].userPassword === this.state.userPassword) {
                         sessionStorage.setItem("userId", su[0].id)
                         this.props.getUserApregs(parseInt(sessionStorage.getItem("userId")))
                         this.props.history.push("/home")
                         window.location.reload();
-                    } else {
+                    }
+                    if
+                        (su[0].userPassword !== this.state.userPassword) {
+                        alert("That password is NOT correct.  Please try again.")
+                    }
+                    if (this.state.rememberMe === true) {
+
+                        localStorage.setItem("userId", su[0].id)
                         sessionStorage.setItem("userId", su[0].id)
                         this.props.getUserApregs(parseInt(sessionStorage.getItem("userId")))
                         this.props.history.push("/home")
