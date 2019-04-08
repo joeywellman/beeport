@@ -23,6 +23,8 @@ export default class NewUserReg extends Component {
         telHome: "",
         telCell: "",
         telWork: "",
+        listSwarm: "",
+        listPollinate: "",
         keepBees: ""
     }
 
@@ -86,6 +88,8 @@ export default class NewUserReg extends Component {
                     telHome: this.state.telHome,
                     telCell: this.state.telCell,
                     telWork: this.state.telWork,
+                    listSwarm: this.state.listSwarm,
+                    listPollinate: this.state.listPollinate,
                     keepBees: this.state.keepBees
                 }
                 userAPIManager.postUser(newUser).then(pu => {
@@ -383,8 +387,33 @@ export default class NewUserReg extends Component {
                     placeholder="304-123-4567"
                 />
                 <br />
-                {/* This Will Eventually Be a Dropdown Selection or Checkbox: */}
-                <label htmlFor="keepBees">Are You Still Keeping Bees?:</label>
+
+                <label htmlFor="listSwarm">Would you like to be included on a "Swarm List", to help the public mitigate identified swarms?:<br/>
+                <i>*Your name, county and telephone number(s) will be made available to the public for the purpose of removing swarms.</i></label>
+                <select
+                    onChange={this.handleFieldChange}
+                    type="text"
+                    id="listSwarm"
+                    value={this.state.listSwarm}>
+                    <option value="" placeholder="Select an Answer">Select an Answer:</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <label htmlFor="listPollinate">Would you like to be included on a "Pollination List", to help the public identify Beekeepers availavble for Pollination Services?:<br/>
+                <i>*Your name, county and telephone number(s) will be made available to the public for the purpose of removing swarms.</i></label>
+                <select
+                    onChange={this.handleFieldChange}
+                    type="text"
+                    id="listPollinate"
+                    value={this.state.listSwarm}>
+                    <option value="" placeholder="Select an Answer">Select an Answer:</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <label htmlFor="keepBees"><b>*</b>Are You Still Keeping Bees?:<br/>
+                <i>If you are no longer keeping bees, select "No" and we will remove you from our mailing list.</i></label>
                 <select
                     onChange={this.handleFieldChange}
                     type="text"

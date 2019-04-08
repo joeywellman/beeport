@@ -83,8 +83,8 @@ export default class Report extends Component {
                     userId: sumUserId,
                     isLoading: false
                 });
-                console.log(sumColonies)
-                console.log(sumApiaries)
+                // console.log(sumColonies)
+                // console.log(sumApiaries)
             })
             .catch(err => { });
 
@@ -142,7 +142,7 @@ export default class Report extends Component {
             <React.Fragment>
                 <br />
                 <section className="">
-                    <h2>Statewide Colony Loss Analyses (CLAs)</h2>
+                    <h2>Colony Loss Analyses (CLAs)</h2>
                     <br />
                     <div>
                         {/* <p><b>Number of Beekeepers Surveyed:</b><br />
