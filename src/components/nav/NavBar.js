@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
+import './NavBar.css';
+
+
 export default class NavBar extends Component {
 
     logout() {
@@ -11,19 +14,25 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
+            <nav className="navbar navbar-dark bg-dark p-0 shadow">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/home">Home</Link>
+                        <Link className="nav-link white-text" to="/home">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/apregs">Apiary Registration</Link>
+                        <Link className="nav-link white-text" to="/apregs">Beek Registration</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/report">Beekeeper Reports</Link>
+                        <Link className="nav-link white-text" to="/report">Statewide Report</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/report">Resources</Link>
+                        <Link className="nav-link white-text" to="/pollinate">Pollination Service</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link white-text" to="/swarm">Swarm / Colony Remediation</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link white-text" to="/resource">Resources</Link>
                     </li>
                     <li className="nav-item">
                         {sessionStorage.getItem("userId") === null &&

@@ -17,11 +17,15 @@ import React, { Component } from "react";
 import Login from '../components/authentication/login'
 import NewUserReg from '../components/authentication/newUserReg'
 import Home from '../components/home/home'
+import Pollinate from '../components/pollinate/pollinate'
+import Swarm from '../components/swarm/swarm'
+import Resource from '../components/resource/resource'
 import Report from '../components/report/report'
 import ApregList from '../components/Apreg/apregsList'
 import ApregForm from '../components/Apreg/apregForm'
 import ApregEditForm from '../components/Apreg/apregEditForm'
 import apregsAPIManager from '../components/Apreg/apregsAPIManager'
+import userManager from '../components/authentication/userManager'
 
 export default class ApplicationViews extends Component {
 
@@ -31,20 +35,26 @@ export default class ApplicationViews extends Component {
         // Empty out current hard-coded state in the ApplicationViews component:
         // Reconfigure it to query the entire API and populate this data structure.
         users: [],
-        apregs: []
+        apregs: [],
+        allUsers: []
         // Populate the API from JSON (why the arrays / data structure are empty, above).
     };
 
     isAuthenticated = () => sessionStorage.getItem("userId") !== null
 
     componentDidMount() {
+        userManager.getUsers()
+            .then(allUsers => {
+            this.setState({ allUsers: allUsers });
+            // console.log(allUsers)
+        });
         const newState = {};
         apregsAPIManager.getAllApregs()
             .then(users => (newState.users = users))
         if (sessionStorage.userId !== "" || localStorage.userId !== "") {
             return this.getUserApregs(sessionStorage.getItem("userId"))
                 .then(() => this.setState(newState))
-        }
+        };
     }
 
     updateApreg = editedApreg => {
@@ -100,11 +110,31 @@ export default class ApplicationViews extends Component {
                     exact
                     path="/home"
                     render={(props) => {
-                        if (this.isAuthenticated()) {
-                            return <Home {...props} apregs={this.state.apregs} getUserApregs={this.getUserApregs} />
-                        } else {
-                            return <Redirect to="/" />
-                        }
+                        return <Home {...props} apregs={this.state.apregs} getUserApregs={this.getUserApregs} />
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/pollinate"
+                    render={(props) => {
+                        return <Pollinate {...props} allUsers={this.state.allUsers} getUsers={this.getUsers} />
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/resource"
+                    render={(props) => {
+                        return <Resource {...props} apregs={this.state.apregs} getUserApregs={this.getUserApregs} />
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/swarm"
+                    render={props => {
+                        return <Swarm {...props} allUsers={this.state.allUsers} getUsers={this.getUsers} />
                     }}
                 />
 

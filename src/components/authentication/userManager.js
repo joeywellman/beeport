@@ -29,5 +29,10 @@ export default {
     checkUserEmail: (userEmail) => {
         return fetch(`${remoteURL}/users?userEmail=${userEmail}`)
             .then(su => su.json())
+    },
+
+    getUsers() {
+        return fetch(`${remoteURL}/users`)
+            .then(e => e.json())
     }
 }
