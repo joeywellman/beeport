@@ -154,9 +154,9 @@ export default class ApregEditForm extends Component {
       <React.Fragment>
         <form className="apregsEditForm">
           <div className="form-group">
-            <h2>Annual <a href="https://agriculture.wv.gov/divisions/animalhealth/Documents/Annual%20Application%20for%20Apiary%20Registration%202018.pdf" target="_blank" rel="noopener noreferrer" alt="Link to: Physical Copy of Annual Application for Apiary Registration">Application</a> for Apiary Registration</h2>
+            <h2 className="header-text">Annual <a href="https://agriculture.wv.gov/divisions/animalhealth/Documents/Annual%20Application%20for%20Apiary%20Registration%202018.pdf" target="_blank" rel="noopener noreferrer" alt="Link to: Physical Copy of Annual Application for Apiary Registration">Application</a> for Apiary Registration</h2>
 
-            <h5>As required by <a href="http://www.wvlegislature.gov/WVCODE/Code.cfm?chap=19&art=13#13" target="_blank" rel="noopener noreferrer" alt="Link to: West Virginia Code; Chapter 19, Agriculture; Article 13, Inspection and Protection of Agriculture.  Note: Article 13 may be cited as The West Virginia Apiary Act."> Code of West Virginia, Chapter 19, Article 13</a></h5>
+            <h5 className="header-text">As required by <a href="http://www.wvlegislature.gov/WVCODE/Code.cfm?chap=19&art=13#13" target="_blank" rel="noopener noreferrer" alt="Link to: West Virginia Code; Chapter 19, Agriculture; Article 13, Inspection and Protection of Agriculture.  Note: Article 13 may be cited as The West Virginia Apiary Act."> Code of West Virginia, Chapter 19, Article 13</a></h5>
           </div>
           <div className="form-group">
             <label htmlFor="form-header"><b>Name Your Report:</b>

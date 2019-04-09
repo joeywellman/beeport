@@ -118,7 +118,7 @@ export default class NewUserReg extends Component {
             <form onSubmit={this.handleRegister}>
                 {/* <h1 className="font-weight-bold">Beeport</h1> */}
                 <a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a>
-                <h2 className="h3 mb-3 font-weight-bold">New User Registration</h2>
+                <h2 className="h3 mb-3 font-weight-bold header-text">New User Registration</h2>
                 <br />
 
                 <label htmlFor="userName">User Name:</label>

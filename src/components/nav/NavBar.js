@@ -14,7 +14,8 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-dark bg-dark p-0 shadow">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-0 shadow">
+            <a className="navbar-brand" href="http://localhost:3000/home"><b>&nbsp; &nbsp; Beeport</b></a>
                 <ul className="nav nav-pills">
                     <li className="nav-item">
                         <Link className="nav-link white-text" to="/home">Home</Link>
@@ -26,13 +27,13 @@ export default class NavBar extends Component {
                         <Link className="nav-link white-text" to="/apregs">Apiary Registration</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link white-text" to="/report">Statewide Reports</Link>
+                        <Link className="nav-link white-text" to="/report">Honey Bee Reports</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link white-text" to="/pollinate">Pollination Services</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link white-text" to="/swarm">Swarm Contact List</Link>
+                        <Link className="nav-link white-text" to="/swarm">Swarm Contacts</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link white-text" to="/resource">Resources</Link>

@@ -1,3 +1,7 @@
+.header-text {
+    color: black;
+}
+
 .padded-header {
     position: relative;
     top: 45px;

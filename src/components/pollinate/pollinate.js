@@ -18,7 +18,7 @@ export default class Pollinate extends Component {
     render() {
         return (
             <section className="allUsers">
-                <h2 className="allUser"><a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
+                <h2 className="header-text"><a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
                 Pollination Services</h2><br />
                 <label htmlFor="selectedCounty"><b>Find Contact:</b></label>
                 <select
