@@ -6,6 +6,7 @@ import './apregs.css'
 export default class ApregEditForm extends Component {
   // Set Initial State:
   state = {
+    apregFormNumber: "",
     apregTimestamp: "",
     apregReportName: "",
     apregReportYear: "",
@@ -16,7 +17,7 @@ export default class ApregEditForm extends Component {
     apregLossesMites: "",
     apregLossesQueenFailure: "",
     apregLossesStarvation: "",
-    apregOtherLosses: "",
+    apregLossesOther: "",
     apregIncreasesSplits: "",
     apregIncreasesPackages: "",
     apregIncreasesNucs: "",
@@ -63,7 +64,7 @@ export default class ApregEditForm extends Component {
       window.alert("Please enter number of colonies you lost, due to queen failure.");
     } else if (this.state.apregLossesStarvation === "") {
       window.alert("Please enter number of colonies you lost to starvation.");
-    } else if (this.state.apregOtherLosses === "") {
+    } else if (this.state.apregLossesOtherLosses === "") {
       window.alert("Please enter number of colonies you lost, due to other causes.");
     } else if (this.state.apregIncreasesSplits === "") {
       window.alert("Please enter number of colonies you added, from making splits.");
@@ -87,7 +88,9 @@ export default class ApregEditForm extends Component {
       var dt = new Date();
       var moment = require('moment');
       var apregTimestamp = moment(dt).format("YYYY-MM-DD HH:mm:ss")
+      var apregFormNumber = 1
       const editedApreg = {
+        formNumber: apregFormNumber,
         id: this.props.match.params.apregId,
         timestamp: apregTimestamp,
         reportName: this.state.apregReportName,
@@ -99,7 +102,7 @@ export default class ApregEditForm extends Component {
         lossesMites: this.state.apregLossesMites,
         lossesQueenFailure: this.state.apregLossesQueenFailure,
         lossesStarvation: this.state.apregLossesStarvation,
-        lossesOther: this.state.apregOtherLosses,
+        lossesOther: this.state.apregLossesOther,
         increasesSplits: this.state.apregIncreasesSplits,
         increasesPackages: this.state.apregIncreasesPackages,
         increasesNucs: this.state.apregIncreasesNucs,
@@ -132,7 +135,7 @@ export default class ApregEditForm extends Component {
         apregLossesMites: apreg.lossesMites,
         apregLossesQueenFailure: apreg.lossesQueenFailure,
         apregLossesStarvation: apreg.lossesStarvation,
-        apregOtherLosses: apreg.lossesOther,
+        apregLossesOther: apreg.lossesOther,
         apregIncreasesSplits: apreg.increasesSplits,
         apregIncreasesPackages: apreg.increasesPackages,
         apregIncreasesNucs: apreg.increasesNucs,
@@ -267,15 +270,15 @@ export default class ApregEditForm extends Component {
               placeholder="Number of Colonies Lost to Starvation"
               value={this.state.apregLossesStarvation}
             />
-            <label htmlFor="apregOtherLosses">Other</label>
+            <label htmlFor="apregLossesOther">Other</label>
             <input
               type="number"
               required
               className="form-control"
               onChange={this.handleFieldChange}
-              id="apregOtherLosses"
+              id="apregLossesOther"
               placeholder="Number of Colonies Lost to Other Issues"
-              value={this.state.apregOtherLosses}
+              value={this.state.apregLossesOther}
             />
           </div>
           <div className="form-group">

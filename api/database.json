@@ -6,7 +6,7 @@
       "userPassword": "c",
       "nameFirst": "c",
       "nameLast": "c",
-      "locationCounty": "c",
+      "locationCounty": "Cabell",
       "address1": "c",
       "address2": "c",
       "locationCity": "c",
@@ -17,6 +17,7 @@
       "telWork": "c",
       "keepBees": "Yes",
       "listSwarm": "No",
+      "listPollinate": "Yes",
       "id": 1
     },
     {
@@ -63,6 +64,7 @@
   "apregs": [
     {
       "id": 1,
+      "formNumber": 1,
       "timestamp": "2019-04-03 16:56:07",
       "reportName": "My 2019 Apiary Registration",
       "reportYear": "2019",
@@ -89,6 +91,7 @@
     },
     {
       "id": 2,
+      "formNumber": 1,
       "timestamp": "2019-04-04 14:59:42",
       "reportName": "My 2018 Apiary Registration",
       "reportYear": "2018",
@@ -112,6 +115,60 @@
       "appBestPracticesConfirmation": "No",
       "appBestPracticesSignature": "",
       "userId": 1
+    },
+    {
+      "formNumber": 1,
+      "id": 3,
+      "timestamp": "2019-04-09 16:13:04",
+      "reportName": "Tom Cruise's 2019 Apiary Registration",
+      "reportYear": "2019",
+      "totalColonies": "6",
+      "totalApiaries": "1",
+      "lossesSummer": "1",
+      "lossesWinter": "2",
+      "lossesMites": "1",
+      "lossesQueenFailure": "1",
+      "lossesStarvation": "1",
+      "lossesOther": "0",
+      "increasesSplits": "1",
+      "increasesPackages": "2",
+      "increasesNucs": "3",
+      "increasesSwarms": "0",
+      "inspectionInterstate": "No",
+      "inspectionDistribute": "No",
+      "inspectionNewBeek": "No",
+      "applicationDate": "04/09/2019",
+      "applicationSignature": "Thomas D. Cruise",
+      "appBestPracticesConfirmation": "Yes",
+      "appBestPracticesSignature": "Thomas D. Cruise",
+      "userId": 2
+    },
+    {
+      "formNumber": 1,
+      "timestamp": "2019-04-09 16:12:50",
+      "reportName": "Tom's 2018 Apiary Application",
+      "reportYear": "2018",
+      "totalColonies": "10",
+      "totalApiaries": "1",
+      "lossesSummer": "1",
+      "lossesWinter": "3",
+      "lossesMites": "1",
+      "lossesQueenFailure": "1",
+      "lossesStarvation": "1",
+      "lossesOther": "1",
+      "increasesSplits": "1",
+      "increasesPackages": "2",
+      "increasesNucs": "3",
+      "increasesSwarms": "4",
+      "inspectionInterstate": "Yes",
+      "inspectionDistribute": "Yes",
+      "inspectionNewBeek": "Yes",
+      "applicationDate": "04/01/2018",
+      "applicationSignature": "Thomas D. Cruise",
+      "appBestPracticesConfirmation": "",
+      "appBestPracticesSignature": "Thomas D. Cruise",
+      "userId": 2,
+      "id": 4
     }
   ]
 }

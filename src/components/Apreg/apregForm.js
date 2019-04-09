@@ -6,6 +6,7 @@ import "./apregs.css";
 export default class ApregForm extends Component {
     // Set INITIAL State:
     state = {
+        apregFormNumber: "",
         apregTimestamp: "",
         apregReportName: "",
         apregReportYear: "",
@@ -88,9 +89,11 @@ export default class ApregForm extends Component {
             var dt = new Date();
             var moment = require('moment');
             var apregTimestamp = moment(dt).format("YYYY-MM-DD HH:mm:ss")
+            var apregFormNumber = 1
             // moment(dt).tz("America/New_York").format("YYYY-MM-DD HH:mm:ss")
             // var utcDate = dt.toUTCString();
             const newApreg = {
+                formNumber: apregFormNumber,
                 timestamp: apregTimestamp,
                 reportName: this.state.apregReportName,
                 reportYear: this.state.apregReportYear,
