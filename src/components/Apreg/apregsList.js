@@ -8,7 +8,7 @@ export default class ApregList extends Component {
     render() {
         return (
             <React.Fragment>
-                <h2>Annual Apiary Registration Submissions</h2>
+                <h2 className="header-text">Annual Apiary Registration Submissions</h2>
                 <br />
                 <section className="apregs">
                     {this.props.apregs.map(apreg => (

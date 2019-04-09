@@ -17,6 +17,7 @@ import React, { Component } from "react";
 import Login from '../components/authentication/login'
 import NewUserReg from '../components/authentication/newUserReg'
 import Home from '../components/home/home'
+import About from '../components/about/about'
 import Pollinate from '../components/pollinate/pollinate'
 import Swarm from '../components/swarm/swarm'
 import Resource from '../components/resource/resource'
@@ -26,6 +27,7 @@ import ApregForm from '../components/Apreg/apregForm'
 import ApregEditForm from '../components/Apreg/apregEditForm'
 import apregsAPIManager from '../components/Apreg/apregsAPIManager'
 import userManager from '../components/authentication/userManager'
+
 
 export default class ApplicationViews extends Component {
 
@@ -45,9 +47,9 @@ export default class ApplicationViews extends Component {
     componentDidMount() {
         userManager.getUsers()
             .then(allUsers => {
-            this.setState({ allUsers: allUsers });
-            // console.log(allUsers)
-        });
+                this.setState({ allUsers: allUsers });
+                // console.log(allUsers)
+            });
         const newState = {};
         apregsAPIManager.getAllApregs()
             .then(users => (newState.users = users))
@@ -111,6 +113,14 @@ export default class ApplicationViews extends Component {
                     path="/home"
                     render={(props) => {
                         return <Home {...props} apregs={this.state.apregs} getUserApregs={this.getUserApregs} />
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/about"
+                    render={(props) => {
+                        return <About {...props} apregs={this.state.apregs} getUserApregs={this.getUserApregs} />
                     }}
                 />
 

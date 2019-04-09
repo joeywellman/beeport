@@ -2,6 +2,7 @@ import React, { Component } from "react"
 // import { Route, Redirect } from "react-router-dom"
 // import InputMask from 'react-input-mask';
 import "./login.css";
+import Beeport from "./Beeport.jpg"
 import userAPIManager from "./userManager"
 
 
@@ -115,8 +116,9 @@ export default class NewUserReg extends Component {
     render() {
         return (
             <form onSubmit={this.handleRegister}>
-                <h1 className="font-weight-bold">Beeport</h1>
-                <h2 className="h3 mb-3 font-weight-bold">New User Registration</h2>
+                {/* <h1 className="font-weight-bold">Beeport</h1> */}
+                <a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a>
+                <h2 className="h3 mb-3 font-weight-bold header-text">New User Registration</h2>
                 <br />
 
                 <label htmlFor="userName">User Name:</label>
@@ -240,7 +242,7 @@ export default class NewUserReg extends Component {
                     <option value="Pleasants">Pleasants</option>
                     <option value="Pocahontas">Pocahontas</option>
                     <option value="Preston">Preston</option>
-                    <option value="Putnam County">Putnam County</option>
+                    <option value="Putnam County">Putnam</option>
                     <option value="Raleigh">Raleigh</option>
                     <option value="Randolph">Randolph</option>
                     <option value="Ritchie">Ritchie</option>
@@ -388,8 +390,8 @@ export default class NewUserReg extends Component {
                 />
                 <br />
 
-                <label htmlFor="listSwarm">Would you like to be included on a "Swarm List", to help the public mitigate identified swarms?:<br/>
-                <i>*Your name, county and telephone number(s) will be made available to the public for the purpose of removing swarms.</i></label>
+                <label htmlFor="listSwarm">Would you like to be included on a "Swarm List", to help the public mitigate identified swarms?:<br />
+                    <i>*Your name, county and telephone number(s) will be made available to the public for the purpose of removing swarms.</i></label>
                 <select
                     onChange={this.handleFieldChange}
                     type="text"
@@ -400,8 +402,8 @@ export default class NewUserReg extends Component {
                     <option value="No">No</option>
                 </select>
 
-                <label htmlFor="listPollinate">Would you like to be included on a "Pollination List", to help the public identify Beekeepers availavble for Pollination Services?:<br/>
-                <i>*Your name, county and telephone number(s) will be made available to the public for the purpose of removing swarms.</i></label>
+                <label htmlFor="listPollinate">Would you like to be included on a "Pollination List", to help the public identify Beekeepers availavble for Pollination Services?:<br />
+                    <i>*Your name, county and telephone number(s) will be made available to the public for the purpose of removing swarms.</i></label>
                 <select
                     onChange={this.handleFieldChange}
                     type="text"
@@ -412,8 +414,8 @@ export default class NewUserReg extends Component {
                     <option value="No">No</option>
                 </select>
 
-                <label htmlFor="keepBees"><b>*</b>Are You Still Keeping Bees?:<br/>
-                <i>If you are no longer keeping bees, select "No" and we will remove you from our mailing list.</i></label>
+                <label htmlFor="keepBees"><b>*</b>Are You Still Keeping Bees?:<br />
+                    <i>If you are no longer keeping bees, select "No" and we will remove you from our mailing list.</i></label>
                 <select
                     onChange={this.handleFieldChange}
                     type="text"
