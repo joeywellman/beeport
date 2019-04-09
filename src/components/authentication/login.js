@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import './login.css'
+import Beeport from "./Beeport.jpg"
 import userManager from "./userManager";
 
 
@@ -74,7 +75,8 @@ export default class Login extends Component {
         return (
             <div>
                 <form onSubmit={this.handleLogin}>
-                    <h1 className="font-weight-bold">Beeport</h1>
+                    {/* <h1 className="font-weight-bold">Beeport</h1> */}
+                    <a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a>
                     <h2 className="h3 mb-3"><b>Existing Users</b>
                         <br />Please Sign In:</h2>
                     <br />

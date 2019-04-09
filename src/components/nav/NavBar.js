@@ -20,16 +20,19 @@ export default class NavBar extends Component {
                         <Link className="nav-link white-text" to="/home">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link white-text" to="/apregs">Beek Registration</Link>
+                        <Link className="nav-link white-text" to="/about">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link white-text" to="/report">Statewide Report</Link>
+                        <Link className="nav-link white-text" to="/apregs">Apiary Registration</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link white-text" to="/pollinate">Pollination Service</Link>
+                        <Link className="nav-link white-text" to="/report">Statewide Reports</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link white-text" to="/swarm">Swarm / Colony Remediation</Link>
+                        <Link className="nav-link white-text" to="/pollinate">Pollination Services</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link white-text" to="/swarm">Swarm Contact List</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link white-text" to="/resource">Resources</Link>
@@ -40,11 +43,11 @@ export default class NavBar extends Component {
                             ? (
                                 <Link className="nav-link" to="/">
                                     <b>Sign In</b>
-                    </Link>
+                                </Link>
                             ) : (
                                 <Link className="nav-link" to="/" onClick={this.logout}>
                                     <b>Sign Out</b>
-                    </Link>
+                                </Link>
                             )}
                     </li>
 

@@ -1,0 +1,11 @@
+.padded-header {
+    position: relative;
+    top: 45px;
+}
+
+p {
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-align-last: center;
+}

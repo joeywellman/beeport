@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './swarm.css';
+import Beeport from "../authentication/Beeport.jpg"
 
 
 export default class Swarm extends Component {
@@ -17,14 +18,15 @@ export default class Swarm extends Component {
     render() {
         return (
             <section className="allUsers">
-                <h2 className="allUser">Swarm Mitigation Contacts</h2><br />
-                <label htmlFor="selectedCounty">County:</label>
+                <h2 className="allUser"><a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
+                Swarm Mitigation</h2><br />
+                <label htmlFor="selectedCounty"><b>Find Contact:</b></label>
                 <select
                     onChange={this.handleFieldChange}
                     id="selectedCounty"
                     value={this.state.selectedCounty}
-                    >
-                    <option value="Choose County">Choose County</option>
+                >
+                    <option value="Choose County">(by County)</option>
                     <option value="Barbour">Barbour</option>
                     <option value="Berkeley">Berkeley</option>
                     <option value="Boone">Boone</option>
@@ -64,7 +66,7 @@ export default class Swarm extends Component {
                     <option value="Pleasants">Pleasants</option>
                     <option value="Pocahontas">Pocahontas</option>
                     <option value="Preston">Preston</option>
-                    <option value="Putnam County">Putnam County</option>
+                    <option value="Putnam">Putnam</option>
                     <option value="Raleigh">Raleigh</option>
                     <option value="Randolph">Randolph</option>
                     <option value="Ritchie">Ritchie</option>
@@ -83,7 +85,7 @@ export default class Swarm extends Component {
                 </select>
                 {this.props.allUsers.filter(usr => usr.listSwarm === "Yes" & usr.locationCounty === this.state.selectedCounty).map(allUser => (
                     <div className="" key={allUser.id}>
-                        <h5>Contact #{allUser.id}</h5>
+                        <h6><b><u>Contact #{allUser.id}</u></b></h6>
                         <div className="row justify-content-md-center">
                             <p className="text-justify"><b>Name:</b> {allUser.nameFirst} {allUser.nameLast}<br />
                                 <b>County:</b> {allUser.locationCounty}<br />

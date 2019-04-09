@@ -159,8 +159,8 @@ export default class Report extends Component {
                                 decimal=","
                                 prefix=""
                                 suffix=" "
-                                // onEnd={() => console.log('Ended! 👏')}
-                                // onStart={() => console.log('Started! 💨')}
+                            // onEnd={() => console.log('Ended! 👏')}
+                            // onStart={() => console.log('Started! 💨')}
                             >
                             </CountUp>
                         </p>
@@ -175,8 +175,8 @@ export default class Report extends Component {
                                 decimal=","
                                 prefix=""
                                 suffix=" "
-                                // onEnd={() => console.log('Ended! 👏')}
-                                // onStart={() => console.log('Started! 💨')}
+                            // onEnd={() => console.log('Ended! 👏')}
+                            // onStart={() => console.log('Started! 💨')}
                             >
                             </CountUp>
                         </p>
@@ -191,8 +191,8 @@ export default class Report extends Component {
                                 decimal=","
                                 prefix=""
                                 suffix=" "
-                                // onEnd={() => console.log('Ended! 👏')}
-                                // onStart={() => console.log('Started! 💨')}
+                            // onEnd={() => console.log('Ended! 👏')}
+                            // onStart={() => console.log('Started! 💨')}
                             >
                             </CountUp>
                         </p></div>
@@ -203,7 +203,7 @@ export default class Report extends Component {
                         <h3>WV Hive Loss Causation</h3>
                         <br />
                         <div>
-                            <PieChart data={[["Mites", this.state.lossesMites], ["Queen Failure", this.state.lossesQueenFailure], ["Starvation", this.state.lossesStarvation], ["Other", this.state.lossesOther]]} colors={["#FF6384", "#36A2EB", "#FFD700", "#FFA500"]} hoverBackgroundColor={["#DC143C","#0000FF","#FFFF00", "#FF4500"]} />
+                            <PieChart data={[["Mites", this.state.lossesMites], ["Queen Failure", this.state.lossesQueenFailure], ["Starvation", this.state.lossesStarvation], ["Other", this.state.lossesOther]]} colors={["#FF6384", "#36A2EB", "#FFD700", "#FFA500"]} hoverBackgroundColor={["#DC143C", "#0000FF", "#FFFF00", "#FF4500"]} />
                         </div>
                     </div>
                     <br />
