@@ -1,0 +1,37 @@
+.bold {
+  text-emphasis: bold;
+}
+
+.header-text-beek {
+  color: blue;
+  text-align: center;
+  text-emphasis: bold;
+}
+
+.header-text-beek-sub {
+  color: blue;
+  text-align: center;
+  text-emphasis: bold;
+  text-decoration: underline;
+}
+
+.text-blue {
+  color: rgb(47, 47, 226);
+}
+
+  .header-text-state {
+    color: red;
+    text-align: center;
+    text-emphasis: bold;
+}
+
+.header-text-state-sub {
+  color: red;
+  text-align: center;
+  text-emphasis: bold;
+  text-decoration: underline;
+}
+
+.text-red {
+  color: rgb(226, 47, 47);
+}
