@@ -11,7 +11,7 @@ export default class ApregList extends Component {
             <React.Fragment>
                 <h2 className="header-text"><a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
                 Annual Apiary Registration Submissions</h2>
-                <div className="addApregButton">
+                {/* <div className="addApregButton">
                 <br />
                     <button type="button"
                         className="btn btn-success"
@@ -21,7 +21,7 @@ export default class ApregList extends Component {
                         }>
                         Fill Out New Application
                     </button>
-                </div>
+                </div> */}
                 <br />
                 <section className="apregs list-body">
                     {this.props.apregs.map(apreg => (

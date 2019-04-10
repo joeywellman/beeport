@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './about.css';
 import Beeport from "../authentication/Beeport.jpg"
-import BeeWV from "../home/BeeWV.jpg"
+// import BeeWV from "../home/BeeWV.jpg"
 
 
 export default class About extends Component {
