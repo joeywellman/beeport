@@ -82,18 +82,23 @@ export default class Swarm extends Component {
                     <option value="Wirt">Wirt</option>
                     <option value="Wood">Wood</option>
                     <option value="Wyoming">Wyoming</option>
-                </select>
+                    </select>
+                <br />
+                <br />
+                <br />
                 {this.props.allUsers.filter(usr => usr.listSwarm === "Yes" & usr.locationCounty === this.state.selectedCounty).map(allUser => (
                     <div className="" key={allUser.id}>
-                        <h6><b><u>Contact #{allUser.id}</u></b></h6>
+                        <h6><b><u>{allUser.nameFirst} {allUser.nameLast}</u></b></h6>
+                        {/* <h6><b><u>Contact #{allUser.id}</u></b></h6> */}
                         <div className="row justify-content-md-center">
-                            <p className="text-justify"><b>Name:</b> {allUser.nameFirst} {allUser.nameLast}<br />
+                            <p className="text-justify">
+                                {/* <b>Name:</b> {allUser.nameFirst} {allUser.nameLast}<br /> */}
                                 <b>County:</b> {allUser.locationCounty}<br />
                                 <b>Home #:</b> {allUser.telHome}<br />
                                 <b>Cell #:</b> {allUser.telCell}<br />
                             </p>
                         </div>
-                        <br></br>
+                        <br />
                     </div>
                 ))}
             </section>

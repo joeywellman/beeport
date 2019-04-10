@@ -126,6 +126,7 @@ export default class ApregCard extends Component {
     const stateToChange = {};
     stateToChange[evt.target.id] = evt.target.value;
     this.setState(stateToChange);
+
     const dataLossCausation = {
 
       labels: [
@@ -144,39 +145,49 @@ export default class ApregCard extends Component {
         ],
 
         backgroundColor: [
-          '#FF6384',
-          '#36A2EB',
-          '#FFD700',
-          '#FFA500'
+          "#36A2EB",
+          "#FFD700",
+          "#FFA500",
+          "#FF6384",
         ],
 
         hoverBackgroundColor: [
-          '#DC143C',
           '#0000FF',
           '#FFFF00',
-          '#FF4500'
+          '#FF4500',
+          '#DC143C'
         ]
       }]
     }
+
+  
     const dataSeasonalLossRatio = {
 
       labels: [
+        'Spring',
         'Summer',
+        'Fall',
         'Winter'
       ],
       datasets: [{
         data: [
+          this.props.apreg.lossesSpring,
           this.props.apreg.lossesSummer,
+          this.props.apreg.lossesFall,
           this.props.apreg.lossesWinter
         ],
 
         backgroundColor: [
-          '#FF6384',
-          '#36A2EB'
+          "#FF6384",
+          "#FFD700",
+          "#FFA500",
+          "#36A2EB"
         ],
 
         hoverBackgroundColor: [
           '#DC143C',
+          '#FFFF00',
+          '#FF4500',
           '#0000FF'
         ]
       }]
@@ -227,7 +238,7 @@ export default class ApregCard extends Component {
     var reportDate = moment(this.props.apreg.timestamp).format("YYYY-MM-DD")
 
     return (
-      <div key={this.props.apreg.id} className="card">
+      <div key={this.props.apreg.id} className="card list">
         <div className="card-body">
           <h6 className="card-title">
             <p><b>Report Name:</b>

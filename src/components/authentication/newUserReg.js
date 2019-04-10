@@ -408,7 +408,7 @@ export default class NewUserReg extends Component {
                     onChange={this.handleFieldChange}
                     type="text"
                     id="listPollinate"
-                    value={this.state.listSwarm}>
+                    value={this.state.listPollinate}>
                     <option value="" placeholder="Select an Answer">Select an Answer:</option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>

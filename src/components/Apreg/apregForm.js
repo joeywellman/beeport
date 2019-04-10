@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./apregs.css";
+import Beeport from "../authentication/Beeport.jpg"
 // import apregsAPIManager from './apregsAPIManager'
 
 
@@ -12,7 +13,9 @@ export default class ApregForm extends Component {
         apregReportYear: "",
         apregTotalColonies: "",
         apregTotalApiaries: "",
+        apregLossesSpring: "",
         apregLossesSummer: "",
+        apregLossesFall: "",
         apregLossesWinter: "",
         apregLossesMites: "",
         apregLossesQueenFailure: "",
@@ -55,8 +58,12 @@ export default class ApregForm extends Component {
             window.alert("Please enter your total number of colonies.");
         } else if (this.state.apregTotalApiaries === "") {
             window.alert("Please choose the number of apiaries you operate.");
+        } else if (this.state.apregLossesSpring === "") {
+            window.alert("Please enter the number of colonies you lost, during the spring.");
         } else if (this.state.apregLossesSummer === "") {
             window.alert("Please enter the number of colonies you lost, during the summer.");
+        } else if (this.state.apregLossesFall === "") {
+            window.alert("Please enter the number of colonies you lost, during the fall.");
         } else if (this.state.apregLossesWinter === "") {
             window.alert("Please enter the number of colonies you lost, during the winter.");
         } else if (this.state.apregLossesMites === "") {
@@ -99,7 +106,9 @@ export default class ApregForm extends Component {
                 reportYear: this.state.apregReportYear,
                 totalColonies: this.state.apregTotalColonies,
                 totalApiaries: this.state.apregTotalApiaries,
+                lossesSpring: this.state.apregLossesSpring,
                 lossesSummer: this.state.apregLossesSummer,
+                lossesFall: this.state.apregLossesFall,
                 lossesWinter: this.state.apregLossesWinter,
                 lossesMites: this.state.apregLossesMites,
                 lossesQueenFailure: this.state.apregLossesQueenFailure,
@@ -129,7 +138,8 @@ export default class ApregForm extends Component {
             <React.Fragment>
                 <form className="apregsForm">
                     <div className="form-group">
-                        <h2 className="header-text">Annual <a href="https://agriculture.wv.gov/divisions/animalhealth/Documents/Annual%20Application%20for%20Apiary%20Registration%202018.pdf" target="_blank" alt="Link to: Physical Copy of Annual Application for Apiary Registration" rel="noopener noreferrer">Application</a> for Apiary Registration</h2>
+                        <h2 className="header-text"><a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
+                        Annual <a href="https://agriculture.wv.gov/divisions/animalhealth/Documents/Annual%20Application%20for%20Apiary%20Registration%202018.pdf" target="_blank" alt="Link to: Physical Copy of Annual Application for Apiary Registration" rel="noopener noreferrer">Application</a> for Apiary Registration</h2>
 
                         <h5 className="header-text">As required by <a href="http://www.wvlegislature.gov/WVCODE/Code.cfm?chap=19&art=13#13" target="_blank" rel="noopener noreferrer" alt="Link to: West Virginia Code; Chapter 19, Agriculture; Article 13, Inspection and Protection of Agriculture.  Note: Article 13 may be cited as The West Virginia Apiary Act."> Code of West Virginia, Chapter 19, Article 13</a></h5>
                     </div>
@@ -184,6 +194,15 @@ export default class ApregForm extends Component {
                     <div className="form-group">
                         <label htmlFor="form-header"><b>Number of Colonies Lost During:</b></label>
                         <br />
+                        <label htmlFor="apregLossesSpring">Spring</label>
+                        <input
+                            type="number"
+                            required
+                            className="form-control"
+                            onChange={this.handleFieldChange}
+                            id="apregLossesSpring"
+                            placeholder="Number of Colonies Lost during Spring"
+                        />
                         <label htmlFor="apregLossesSummer">Summer</label>
                         <input
                             type="number"
@@ -192,6 +211,15 @@ export default class ApregForm extends Component {
                             onChange={this.handleFieldChange}
                             id="apregLossesSummer"
                             placeholder="Number of Colonies Lost during Summer"
+                        />
+                        <label htmlFor="apregLossesFall">Fall</label>
+                        <input
+                            type="number"
+                            required
+                            className="form-control"
+                            onChange={this.handleFieldChange}
+                            id="apregLossesFall"
+                            placeholder="Number of Colonies Lost during Fall"
                         />
                         <label htmlFor="apregLossesWinter">Winter</label>
                         <input
@@ -345,7 +373,7 @@ export default class ApregForm extends Component {
                         is considered a typed legal First and Last name (legal name may include middle name, initial or
                         suffix) followed by the typed date. Any document requiring an electronic signature may contain
                         a signature acknowledgment statement provided in the same area requiring the electronic signature.</p>
-                        <label htmlFor="apregApplicationSignature">Signature (<i>Type your full name.</i>):</label>
+                        <label htmlFor="apregApplicationSignature">Electronic Signature (<i>Type your full name.</i>):</label>
                         <input
                             type="text"
                             required
@@ -384,7 +412,7 @@ export default class ApregForm extends Component {
                             <option value="No">No</option>
                             <option value="Yes">Yes</option>
                         </select>
-                        <label htmlFor="apregAppBestPracticesSignature">Signature (<i>Type your full name.</i>):</label>
+                        <label htmlFor="apregAppBestPracticesSignature">Electronic Signature (<i>Type your full name.</i>):</label>
                         <input
                             type="text"
                             required
