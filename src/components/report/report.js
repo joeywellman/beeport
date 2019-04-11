@@ -59,7 +59,7 @@ export default class Report extends Component {
     componentDidMount() {
 
         axios
-            .get('http://localhost:5002/apregs/')
+            .get('https://beeport-api.herokuapp.com/')
             .then(({ data }) => {
                 var sumColonies = 0;
                 var sumApiaries = 0;
@@ -135,7 +135,7 @@ export default class Report extends Component {
         //         .catch(err => { });
 
         axios
-            .get(`http://localhost:5002/apregs/?userId=${parseInt(sessionStorage.getItem("userId"))}`)
+            .get(`https://beeport-api.herokuapp.com/?userId=${parseInt(sessionStorage.getItem("userId"))}`)
             .then(({ data }) => {
                 var sumUserColonies = 0;
                 var sumUserApiaries = 0;

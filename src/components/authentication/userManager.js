@@ -1,10 +1,10 @@
 
 
-const remoteURL = "http://localhost:5002"
+const remoteURL = "https://beeport-api.herokuapp.com/"
 
 export default {
     getAllUsers: () => {
-        return fetch("http://localhost:5002/users")
+        return fetch("https://beeport-api.herokuapp.com/")
             .then(au => au.json())
     },
 

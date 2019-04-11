@@ -1,6 +1,6 @@
 
 
-const remoteURL = "http://localhost:5002"
+const remoteURL = "https://beeport-api.herokuapp.com"
 
 export default {
     getAllApregs: () => {
