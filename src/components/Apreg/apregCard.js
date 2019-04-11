@@ -160,7 +160,7 @@ export default class ApregCard extends Component {
       }]
     }
 
-  
+
     const dataSeasonalLossRatio = {
 
       labels: [

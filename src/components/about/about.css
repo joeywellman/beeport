@@ -1,0 +1,24 @@
+/* p.about {
+    text-align: left !important;
+} */
+
+.about-h3 {
+    display: inline-block;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.black-text {
+    color: black;
+}
+
+.underline {
+text-decoration: underline;
+text-decoration-style: solid;
+}
+
+.align-left{
+    text-align: left
+}

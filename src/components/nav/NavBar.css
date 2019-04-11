@@ -31,7 +31,7 @@ svg {
       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
   } */
 
-  .material-icons {
+  /* .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -43,4 +43,93 @@ svg {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  }
+  } */
+
+.headercss {
+    width: auto;
+    height: auto;
+    background-color: #000000;
+    position: relative;
+}
+
+.headerlogo {
+    width: auto;
+    height: auto;
+    background-color: #272727;
+    position: relative;
+}
+
+.nav {
+    width: auto;
+    height: 70px;
+    background-color: #272727;
+    position: relative;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:left;
+    width:100%;
+    overflow: hidden;
+}
+
+
+li {
+    float: left;
+    width:auto;
+    min-width: auto;
+    overflow: hidden;
+}
+
+/* a:link, a:visited {
+    display: block;
+    height: 68px;
+    min-width: 243px;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    background-color: #272727;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Raleway', Arial;
+    letter-spacing: 2pt;
+    line-height: 200%;
+    overflow: hidden;
+} */
+
+  .navbar .navbar-inner {
+    padding: 0;
+}
+
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+
+.navbar .nav li a {
+    font-weight: normal;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, .75);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
