@@ -18,6 +18,7 @@ import Login from '../components/authentication/login'
 import NewUserReg from '../components/authentication/newUserReg'
 import Home from '../components/home/home'
 import About from '../components/about/about'
+import Profile from '../components/profile/profile'
 import Pollinate from '../components/pollinate/pollinate'
 import Swarm from '../components/swarm/swarm'
 import Resource from '../components/resource/resource'
@@ -26,6 +27,7 @@ import ApregList from '../components/Apreg/apregsList'
 import ApregForm from '../components/Apreg/apregForm'
 import ApregEditForm from '../components/Apreg/apregEditForm'
 import apregsAPIManager from '../components/Apreg/apregsAPIManager'
+import profileAPIManager from '../components/profile/profileAPIManager'
 import userManager from '../components/authentication/userManager'
 
 
@@ -57,11 +59,22 @@ export default class ApplicationViews extends Component {
             return this.getUserApregs(sessionStorage.getItem("userId"))
                 .then(() => this.setState(newState))
         };
+        profileAPIManager.getAllProfiles()
+            .then(users => (newState.users = users))
+        if (sessionStorage.userId !== "" || localStorage.userId !== "") {
+            return this.getUserProfile(sessionStorage.getItem("userId"))
+                .then(() => this.setState(newState))
+        };
     }
 
     updateApreg = editedApreg => {
         return apregsAPIManager.putApreg(editedApreg)
             .then(() => this.getUserApregs(sessionStorage.getItem("userId")))
+    };
+
+    updateProfile = editedProfile => {
+        return profileAPIManager.putProfile(editedProfile)
+            .then(() => this.getUserProfile(sessionStorage.getItem("userId")))
     };
 
     deleteApreg = id => {
@@ -82,9 +95,28 @@ export default class ApplicationViews extends Component {
             })
     }
 
+    getUserProfile = id => {
+        return profileAPIManager.getUserProfile(id)
+            .then(pua => {
+                const apregsByDate = pua.sort(function (a, b) {
+                    var DateA = new Date(a.timestamp), DateB = new Date(b.timestamp)
+                    return DateA - DateB
+                })
+                this.setState({
+                    apregs: apregsByDate
+                })
+            })
+    }
+
     postApreg = apregObject => {
         return apregsAPIManager.postApreg(apregObject)
             .then(() => this.getUserApregs(sessionStorage.getItem("userId"))
+            )
+    }
+
+    postProfile = profileObject => {
+        return apregsAPIManager.postProfile(profileObject)
+            .then(() => this.getUserProfile(sessionStorage.getItem("userId"))
             )
     }
 
@@ -189,6 +221,14 @@ export default class ApplicationViews extends Component {
                         );
                     }}
                 />
+
+                <Route exact path="/profile" render={(props) => {
+                    if (this.isAuthenticated()) {
+                        return <Profile {...props} allUsers={this.state.allUsers} getUsers={this.getUsers} users={this.state.users} getUserProfile={this.state.getUserProfile} updateProfile={this.updateProfile} />
+                    } else {
+                        return <Redirect to="/" />
+                    }
+                }} />
 
             </React.Fragment>
         );

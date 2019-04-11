@@ -76,7 +76,7 @@ export default class Login extends Component {
             <div>
                 <form onSubmit={this.handleLogin}>
                     {/* <h1 className="font-weight-bold">Beeport</h1> */}
-                    <a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a>
+                    <a href="http://localhost:3000/home"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a>
                     <h2 className="h3 mb-3 header-text"><b>Existing Users</b>
                         <br />Please Sign In:</h2>
                     <br />

@@ -5,7 +5,7 @@
 
 .padded-header {
     position: relative;
-    top: 45px;
+    top: 76.5px;
 }
 
 p {
@@ -13,4 +13,8 @@ p {
     height: auto;
     text-align: center;
     text-align-last: center;
+}
+
+.bold {
+    text-emphasis: bold;
 }

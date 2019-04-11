@@ -233,8 +233,8 @@ export default class Report extends Component {
 
         return (
             <React.Fragment>
-                <h2 className="header-text"><a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
-                Colony Loss Analyses (CLAs)</h2>
+                <h2 className="header-text"><a href="http://localhost:3000/home"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
+                    Colony Loss Analyses (CLAs)</h2>
                 <br />
                 <div className="border container text-center " align="center">
                     <div className="border row">
@@ -242,7 +242,7 @@ export default class Report extends Component {
                             <div className="col-auto align-middle">
                                 <br />
                                 <h3 className="header-text-beek align-middle"><a className="test" href="http://localhost:3000/apregs"><img src={WVBeek} alt="WV Beek" height="20%" width="20%"></img></a><br />
-                                Beekeeper (Beek) CLA</h3>
+                                    Beekeeper (Beek) CLA</h3>
                                 <br />
                                 {/* <p><b>Number of Beekeepers Surveyed:</b><br />
                             {this.state.id}
@@ -263,7 +263,7 @@ export default class Report extends Component {
                                     >
                                     </CountUp>
                                 </p>
-                                <p><b>Number of Beek Apiaries (Cumulative):</b><br />
+                                <p><b>Number of Beek Apiaries (<i>Cumulative</i>):</b><br />
                                     <CountUp
                                         className="total-apiaries"
                                         start={0}
@@ -279,7 +279,7 @@ export default class Report extends Component {
                                     >
                                     </CountUp>
                                 </p>
-                                <p><b>Number of Beek Colonies (Cumulative):</b><br />
+                                <p><b>Number of Beek Colonies (<i>Cumulative</i>):</b><br />
                                     <CountUp
                                         className="total-apiaries"
                                         start={0}
@@ -319,8 +319,8 @@ export default class Report extends Component {
                                 <h4 className="header-text-beek-sub">Beek Hive Loss Causation</h4>
                                 <br />
                                 <div className="align-left">
-                                    <PieChart data={[["Mites", this.state.apregLossesMites], ["Queen Failure", this.state.apregLossesQueenFailure], ["Starvation", this.state.apregLossesStarvation], ["Other", this.state.apregLossesOther]]} 
-                                    colors={["#36A2EB", "#FFD700", "#FFA500", "#FF6384"]} />
+                                    <PieChart data={[["Mites", this.state.apregLossesMites], ["Queen Failure", this.state.apregLossesQueenFailure], ["Starvation", this.state.apregLossesStarvation], ["Other", this.state.apregLossesOther]]}
+                                        colors={["#36A2EB", "#FFD700", "#FFA500", "#FF6384"]} />
                                 </div>
                             </div>
                             <br />
@@ -330,8 +330,8 @@ export default class Report extends Component {
                                 <h4 className="header-text-beek-sub">Beek Losses by Season</h4>
                                 <br />
                                 <div>
-                                    <PieChart data={[["Spring", this.state.apregLossesSpring],["Summer", this.state.apregLossesSummer], ["Fall", this.state.apregLossesFall], ["Winter", this.state.apregLossesWinter]]} 
-                                    colors={["#FF6384", "#FFD700", "#FFA500", "#36A2EB"]} />
+                                    <PieChart data={[["Spring", this.state.apregLossesSpring], ["Summer", this.state.apregLossesSummer], ["Fall", this.state.apregLossesFall], ["Winter", this.state.apregLossesWinter]]}
+                                        colors={["#FF6384", "#FFD700", "#FFA500", "#36A2EB"]} />
                                 </div>
                             </div>
                             <br />
@@ -341,19 +341,16 @@ export default class Report extends Component {
                                 <h4 className="header-text-beek-sub">Beek Increases by Type</h4>
                                 <br />
                                 <div>
-                                    <PieChart data={[["Splits", this.state.apregIncreasesSplits], ["Packages", this.state.apregIncreasesPackages], ["Nucs", this.state.apregIncreasesNucs], ["Swarms", this.state.apregIncreasesSwarms]]} 
-                                    colors={["#36A2EB", "#FFD700", "#FF6384", "#FFA500"]} />
+                                    <PieChart data={[["Splits", this.state.apregIncreasesSplits], ["Packages", this.state.apregIncreasesPackages], ["Nucs", this.state.apregIncreasesNucs], ["Swarms", this.state.apregIncreasesSwarms]]}
+                                        colors={["#36A2EB", "#FFD700", "#FF6384", "#FFA500"]} />
                                 </div>
                             </div>
-                            <br />
-                            <hr />
-                            <br />
                         </div>
                         <div className="border col-md-6 text-red">
                             <div className="col-auto align-middle">
                                 <br />
                                 <h3 className="header-text-state align-middle"><a href="http://localhost:3000/apregs"><img src={WVRed} alt="Red WV" height="37.22%" width="37.22%"></img></a><br />
-                                Statewide (WV) CLA</h3>
+                                    Statewide (WV) CLA</h3>
                                 <br />
                                 {/* <p><b>Number of Beekeepers Surveyed:</b><br />
                             {this.state.summationId}
@@ -430,8 +427,8 @@ export default class Report extends Component {
                                 <h4 className="header-text-state-sub">WV Hive Loss Causation</h4>
                                 <br />
                                 <div className="align-left">
-                                    <PieChart data={[["Mites", this.state.summationLossesMites], ["Queen Failure", this.state.summationLossesQueenFailure], ["Starvation", this.state.summationLossesStarvation], ["Other", this.state.summationLossesOther]]} 
-                                    colors={["#36A2EB", "#FFD700", "#FFA500", "#FF6384"]} />
+                                    <PieChart data={[["Mites", this.state.summationLossesMites], ["Queen Failure", this.state.summationLossesQueenFailure], ["Starvation", this.state.summationLossesStarvation], ["Other", this.state.summationLossesOther]]}
+                                        colors={["#36A2EB", "#FFD700", "#FFA500", "#FF6384"]} />
                                 </div>
                             </div>
                             <br />
@@ -441,8 +438,8 @@ export default class Report extends Component {
                                 <h4 className="header-text-state-sub">WV Hive Losses by Season</h4>
                                 <br />
                                 <div>
-                                    <PieChart data={[["Spring", this.state.summationLossesSpring], ["Summer", this.state.summationLossesSummer], ["Fall", this.state.summationLossesFall], ["Winter", this.state.summationLossesWinter]]} 
-                                    colors={["#FF6384", "#FFD700", "#FFA500", "#36A2EB"]} />
+                                    <PieChart data={[["Spring", this.state.summationLossesSpring], ["Summer", this.state.summationLossesSummer], ["Fall", this.state.summationLossesFall], ["Winter", this.state.summationLossesWinter]]}
+                                        colors={["#FF6384", "#FFD700", "#FFA500", "#36A2EB"]} />
                                 </div>
                             </div>
                             <br />
@@ -452,16 +449,14 @@ export default class Report extends Component {
                                 <h4 className="header-text-state-sub">WV Hive Increases by Type</h4>
                                 <br />
                                 <div>
-                                    <PieChart data={[["Splits", this.state.summationIncreasesSplits], ["Packages", this.state.summationIncreasesPackages], ["Nucs", this.state.summationIncreasesNucs], ["Swarms", this.state.summationIncreasesSwarms]]} 
-                                    colors={["#36A2EB", "#FFD700", "#FF6384", "#FFA500"]} />
+                                    <PieChart data={[["Splits", this.state.summationIncreasesSplits], ["Packages", this.state.summationIncreasesPackages], ["Nucs", this.state.summationIncreasesNucs], ["Swarms", this.state.summationIncreasesSwarms]]}
+                                        colors={["#36A2EB", "#FFD700", "#FF6384", "#FFA500"]} />
                                 </div>
                             </div>
-                            <br />
-                            <hr />
-                            <br />
                         </div>
                     </div>
                 </div>
+                <br /><br /><br /><br />
             </React.Fragment>
         );
     }

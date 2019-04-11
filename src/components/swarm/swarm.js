@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './swarm.css';
 import Beeport from "../authentication/Beeport.jpg"
+import GoogleMaps from "simple-react-google-maps"
 
 
 export default class Swarm extends Component {
@@ -18,9 +19,9 @@ export default class Swarm extends Component {
     render() {
         return (
             <section className="allUsers">
-                <h2 className="header-text"><a href="http://localhost:3000/apregs"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
-                Swarm Mitigation</h2><br />
-                <label htmlFor="selectedCounty"><b>Find Contact:</b></label>
+                <h2 className="header-text"><a href="http://localhost:3000/home"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
+                    Swarm Mitigation</h2><br />
+                <label className="sub-head" htmlFor="selectedCounty"><b>Find Beekeeper:</b></label>
                 <select
                     onChange={this.handleFieldChange}
                     id="selectedCounty"
@@ -82,25 +83,65 @@ export default class Swarm extends Component {
                     <option value="Wirt">Wirt</option>
                     <option value="Wood">Wood</option>
                     <option value="Wyoming">Wyoming</option>
-                    </select>
+                </select>
                 <br />
                 <br />
-                <br />
-                {this.props.allUsers.filter(usr => usr.listSwarm === "Yes" & usr.locationCounty === this.state.selectedCounty).map(allUser => (
-                    <div className="" key={allUser.id}>
-                        <h6><b><u>{allUser.nameFirst} {allUser.nameLast}</u></b></h6>
-                        {/* <h6><b><u>Contact #{allUser.id}</u></b></h6> */}
-                        <div className="row justify-content-md-center">
-                            <p className="text-justify">
-                                {/* <b>Name:</b> {allUser.nameFirst} {allUser.nameLast}<br /> */}
-                                <b>County:</b> {allUser.locationCounty}<br />
-                                <b>Home #:</b> {allUser.telHome}<br />
-                                <b>Cell #:</b> {allUser.telCell}<br />
-                            </p>
+                <div>
+                    {this.props.allUsers.filter(usr => usr.listSwarm === "Yes" & usr.locationCounty === this.state.selectedCounty).map(allUser => (
+                        <div className="" key={allUser.id}>
+                            <h6><b><u>{allUser.nameFirst} {allUser.nameLast}</u></b></h6>
+                            {/* <h6><b><u>Contact #{allUser.id}</u></b></h6> */}
+                            <div className="row justify-content-md-center">
+                                <p className="text-justify">
+                                    {/* <b>Name:</b> {allUser.nameFirst} {allUser.nameLast}<br /> */}
+                                    <b>County:</b> {allUser.locationCounty}<br />
+                                    <b>Home #:</b> {allUser.telHome}<br />
+                                    <b>Cell #:</b> {allUser.telCell}<br />
+                                </p>
+                            </div>
+                            <br />
                         </div>
-                        <br />
-                    </div>
-                ))}
+                    ))}
+                    <i>This concludes your search results.<br />
+                        For contacts, please select a county.</i>
+                    <br />
+                </div>
+                <br />
+                <br />
+                <label className="sub-head" htmlFor="selectedCounty"><b>Locations Where Pollination Services are Available:</b></label>
+                <div className="center-map">
+                    <GoogleMaps
+                        // mapTypeId= {"satellite"}
+                        apiKey={"AIzaSyCPHYGRAhSs5Fb4QAFeWNI6jHjpt0pQKeY"}
+                        style={{ height: '500px', width: '500px' }}
+                        mapElement={<div style={{ height: `100%` }} />}
+                        zoom={7}
+                        center={{ lat: 38.99, lng: -80.25 }}
+                        markers={
+                            [
+                                { lat: 38.4135892, lng: -82.5575993 },
+                                { lat: 38.4135892, lng: -82.5575993 },
+                                { lat: 38.4135892, lng: -82.5575993 },
+                                { lat: 39.1252758, lng: -80.2981782 },
+                                { lat: 39.1252758, lng: -80.2981782 },
+                                { lat: 39.4886, lng: -78.0652 },
+                                { lat: 37.9839, lng: -81.7349 },
+                                { lat: 38.7023, lng: -80.7214 },
+                                { lat: 40.2698, lng: -80.5661 },
+                            ]
+
+                        }
+                    // defaultOptions={{
+                    //     // defaultCenter: {lat: -34.397, lng: 150.644 },
+                    //     mapTypeId: 'satellite',//google.maps.MapTypeId.TERRAIN,
+                    //   }}
+                    />
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br /><br />
             </section>
         );
     }

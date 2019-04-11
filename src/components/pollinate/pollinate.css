@@ -5,3 +5,14 @@ select {
     text-align-last: center;
     vertical-align: center
 }
+
+.center-map {
+    margin: auto;
+    width: 506px;
+    border: 3px solid black;
+    padding: auto;
+}
+
+.sub-head {
+    font-size: 20px;
+}
