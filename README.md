@@ -20,7 +20,7 @@ This is a Front-End Capstone for WV's [NewForce Program](https://newforce.co/).
 - [X] [Materialize](https://materializecss.com/)
 - [X] [React](https://reactjs.org/docs/getting-started.html)
 - [X] [React-Bootstrap](https://react-bootstrap.github.io/)
-- [X] [W3Layouts](https://w3layouts.com/) Responsive Widget Template
+- [ ] ~~[W3Layouts](https://w3layouts.com/) Responsive Widget Template~~
 
 
 
