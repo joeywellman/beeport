@@ -12,7 +12,7 @@ export default class Home extends Component {
                     <div className="text-center">
                         <h1 className="header-text"><a href="http://localhost:3000/home"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a><br />
                             Welcome to the App!<br /><br />
-                            <a href="http://localhost:3000/apregs"><img className="" src={BeeWV} alt="Beeport Logo" height="33%" width="33%"></img></a><br /><br />
+                            <a href="http://localhost:3000/apregs"><img className="" src={BeeWV} alt="Beeport Logo" height="37%" width="37%"></img></a><br /><br />
                             Become a Member</h1><br />
                         <p className=""><a href="http://localhost:3000/register" rel="noopener noreferrer" alt="Link to Register"><b>Join the Team!</b></a></p>
                         <p className="text-justify"><b className="underline">Beeport</b> is designed to assist with the identification of issues and risk factors plaguing West Virginia honey bee populations.<br />
