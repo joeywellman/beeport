@@ -1,5 +1,5 @@
 .white-text {
-    color:rgb(224, 224, 224)
+    color:rgb(138, 138, 138)
 }
 
 .whiter-text {
@@ -133,3 +133,11 @@ li {
     border-right: 0;
     border-radius: 0 3px 3px 0;
 }
+
+.navbar-dark .nav-item.active .nav-link,
+.navbar-dark .nav-item .nav-link:active,
+.navbar-dark .nav-item .nav-link:focus,
+.navbar-dark .nav-item:hover .nav-link {
+    color:white;
+}
+

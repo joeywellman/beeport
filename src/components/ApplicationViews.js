@@ -59,12 +59,6 @@ export default class ApplicationViews extends Component {
             return this.getUserApregs(sessionStorage.getItem("userId"))
                 .then(() => this.setState(newState))
         };
-        profileAPIManager.getAllProfiles()
-            .then(users => (newState.users = users))
-        if (sessionStorage.userId !== "" || localStorage.userId !== "") {
-            return this.getUserProfile(sessionStorage.getItem("userId"))
-                .then(() => this.setState(newState))
-        };
     }
 
     updateApreg = editedApreg => {

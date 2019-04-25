@@ -181,7 +181,7 @@ export default class ApregEditForm extends Component {
             <input
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregReportName"
               placeholder="My 2019 Annual Application for Apiary Registration"
@@ -191,7 +191,7 @@ export default class ApregEditForm extends Component {
             <select
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregReportYear"
               value={this.state.apregReportYear}>
@@ -199,7 +199,7 @@ export default class ApregEditForm extends Component {
               <option value="2019">2019</option>
               <option value="2018">2018</option>
             </select>
-          </div>
+          </div><br />
           <div className="form-group">
             <label htmlFor="form-header"><b>Number of Hives and Locations at Time of Application:</b></label>
             <br />
@@ -207,7 +207,7 @@ export default class ApregEditForm extends Component {
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregTotalColonies"
               placeholder="Number of Colonies"
@@ -217,7 +217,7 @@ export default class ApregEditForm extends Component {
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregTotalApiaries"
               placeholder="Number of Apiaries"
@@ -227,41 +227,41 @@ export default class ApregEditForm extends Component {
           <div className="form-group">
             <label htmlFor="form-header"><b>Number of Colonies Lost During:</b></label>
             <br />
-            <label htmlFor="apregLossesSpring">Spring</label>
+            <label htmlFor="apregLossesSpring">Spring:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregLossesSpring"
               placeholder="Number of Colonies Lost during Spring"
               value={this.state.apregLossesSpring}
             />
-            <label htmlFor="apregLossesSummer">Summer</label>
+            <label htmlFor="apregLossesSummer">Summer:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregLossesSummer"
               placeholder="Number of Colonies Lost during Summer"
               value={this.state.apregLossesSummer}
             />
-            <label htmlFor="apregLossesFall">Fall</label>
+            <label htmlFor="apregLossesFall">Fall:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregLossesFall"
               placeholder="Number of Colonies Lost during Fall"
               value={this.state.apregLossesFall}
             />
-            <label htmlFor="apregLossesWinter">Winter</label>
+            <label htmlFor="apregLossesWinter">Winter:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregLossesWinter"
               placeholder="Number of Colonies Lost during Winter"
@@ -272,41 +272,41 @@ export default class ApregEditForm extends Component {
             <label htmlFor="form-header"><b>What Caused Losses?:</b>
               <br />(Enter number of colonies in box.)</label>
             <br />
-            <label htmlFor="apregLossesMites">Mites</label>
+            <label htmlFor="apregLossesMites">Mites:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregLossesMites"
               placeholder="Number of Colonies Lost to Mites"
               value={this.state.apregLossesMites}
             />
-            <label htmlFor="apregLossesQueenFailure">Queen Failure</label>
+            <label htmlFor="apregLossesQueenFailure">Queen Failure:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregLossesQueenFailure"
               placeholder="Number of Colonies Lost to Queen Failure(s)"
               value={this.state.apregLossesQueenFailure}
             />
-            <label htmlFor="apregLossesStarvation">Starvation</label>
+            <label htmlFor="apregLossesStarvation">Starvation:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregLossesStarvation"
               placeholder="Number of Colonies Lost to Starvation"
               value={this.state.apregLossesStarvation}
             />
-            <label htmlFor="apregLossesOther">Other</label>
+            <label htmlFor="apregLossesOther">Other:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregLossesOther"
               placeholder="Number of Colonies Lost to Other Issues"
@@ -316,41 +316,41 @@ export default class ApregEditForm extends Component {
           <div className="form-group">
             <label htmlFor="form-header"><b>Number of Increases</b> (<i>if any</i>) <b>in Colonies:</b></label>
             <br />
-            <label htmlFor="apregIncreasesSplits">Splits</label>
+            <label htmlFor="apregIncreasesSplits">Splits:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregIncreasesSplits"
               placeholder="Number of Colony Increases from Splits"
               value={this.state.apregIncreasesSplits}
             />
-            <label htmlFor="apregIncreasesPackages">Packages</label>
+            <label htmlFor="apregIncreasesPackages">Packages:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregIncreasesPackages"
               placeholder="Number of Colony Increases from Packages"
               value={this.state.apregIncreasesPackages}
             />
-            <label htmlFor="apregIncreasesNucs">Nuc's</label>
+            <label htmlFor="apregIncreasesNucs">Nuc's:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregIncreasesNucs"
               placeholder="Number of Colony Increases from Nuc's"
               value={this.state.apregIncreasesNucs}
             />
-            <label htmlFor="apregIncreasesSwarms">Swarms</label>
+            <label htmlFor="apregIncreasesSwarms">Swarms:</label>
             <input
               type="number"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregIncreasesSwarms"
               placeholder="Number of Colony Increases from Swarm Captures"
@@ -360,11 +360,11 @@ export default class ApregEditForm extends Component {
           <div className="form-group">
             <label htmlFor="form-header"><b>Request an Inspection for:</b></label>
             <br />
-            <label htmlFor="apregInspectionInterstate">Interstate Movement of Honeybees</label>
+            <label htmlFor="apregInspectionInterstate">Interstate Movement of Honeybees:</label>
             <select
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregInspectionInterstate"
               value={this.state.apregInspectionInterstate}>
@@ -372,11 +372,11 @@ export default class ApregEditForm extends Component {
               <option value="No">No</option>
               <option value="Yes">Yes</option>
             </select>
-            <label htmlFor="apregInspectionDistribute">Distribution of Bees or Queens</label>
+            <label htmlFor="apregInspectionDistribute">Distribution of Bees or Queens:</label>
             <select
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregInspectionDistribute"
               value={this.state.apregInspectionDistribute}>
@@ -384,11 +384,11 @@ export default class ApregEditForm extends Component {
               <option value="No">No</option>
               <option value="Yes">Yes</option>
             </select>
-            <label htmlFor="apregInspectionNewBeek">I am a New Beekeeper</label>
+            <label htmlFor="apregInspectionNewBeek">I am a New Beekeeper:</label>
             <select
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregInspectionNewBeek"
               value={this.state.apregInspectionNewBeek}>
@@ -414,7 +414,7 @@ export default class ApregEditForm extends Component {
             <input
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregApplicationSignature"
               placeholder="Joseph P . Wellman"
@@ -424,7 +424,7 @@ export default class ApregEditForm extends Component {
             <input
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregApplicationDate"
               placeholder="MM/DD/YYYY"
@@ -437,13 +437,14 @@ export default class ApregEditForm extends Component {
               <br />(This section is voluntary.)</i></label>
             <br />
             <p> I have read the "West Virginia Honey Bee Best Management Practices" as written in §61-2-4, Limits on
-                Liability, and will adhere to this Voluntary program. For additional information regarding this program
+                Liability, and will adhere to this Voluntary program. <br />
+              For additional information regarding this program
                             visit the WVDA webpage, then Divisions/Plant Industries/Apiary and follow the applicable hyperlink.</p>
             <label htmlFor="apregAppBestPracticesConfirmation">Would you like to participate?:</label>
             <select
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregAppBestPracticesConfirmation"
               value={this.state.apregAppBestPracticesConfirmation}>
@@ -455,7 +456,7 @@ export default class ApregEditForm extends Component {
             <input
               type="text"
               required
-              className="form-control"
+              className="col-md-3 col-centered text-center form-control"
               onChange={this.handleFieldChange}
               id="apregAppBestPracticesSignature"
               placeholder="Joseph P . Wellman"
@@ -466,7 +467,7 @@ export default class ApregEditForm extends Component {
           <input
             type="hidden"
             required
-            className="form-control"
+            className="col-md-3 col-centered text-center form-control"
             // onChange={this.handleFieldChange}
             id="userId"
             value={this.state.userId}
@@ -479,6 +480,10 @@ export default class ApregEditForm extends Component {
             Save Changes
                 </button>
         </form>
+        <br />
+        <br />
+        <br />
+        <br />
       </React.Fragment >
     );
   }

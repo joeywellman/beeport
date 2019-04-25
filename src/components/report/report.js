@@ -5,7 +5,7 @@ import Beeport from "../authentication/Beeport.jpg"
 import WVBeek from "./WVBeek.png"
 import WVRed from "./WVRed.png"
 // import { Pie } from 'react-chartjs-2';
-import ReactChartkick, { PieChart } from 'react-chartkick'
+import ReactChartkick, { PieChart, ColumnChart } from 'react-chartkick'
 import axios from "axios";
 import Chart from 'chart.js'
 import CountUp from 'react-countup';
@@ -341,8 +341,8 @@ export default class Report extends Component {
                                 <h4 className="header-text-beek-sub">Beek Increases by Type</h4>
                                 <br />
                                 <div>
-                                    <PieChart data={[["Splits", this.state.apregIncreasesSplits], ["Packages", this.state.apregIncreasesPackages], ["Nucs", this.state.apregIncreasesNucs], ["Swarms", this.state.apregIncreasesSwarms]]}
-                                        colors={["#36A2EB", "#FFD700", "#FF6384", "#FFA500"]} />
+                                    <ColumnChart data={[["Splits", this.state.apregIncreasesSplits], ["Packages", this.state.apregIncreasesPackages], ["Nucs", this.state.apregIncreasesNucs], ["Swarms", this.state.apregIncreasesSwarms]]}
+                                        colors={["#0000FF", "#0000FF", "#0000FF", "#0000FF"]} />
                                 </div>
                             </div>
                         </div>
@@ -449,8 +449,8 @@ export default class Report extends Component {
                                 <h4 className="header-text-state-sub">WV Hive Increases by Type</h4>
                                 <br />
                                 <div>
-                                    <PieChart data={[["Splits", this.state.summationIncreasesSplits], ["Packages", this.state.summationIncreasesPackages], ["Nucs", this.state.summationIncreasesNucs], ["Swarms", this.state.summationIncreasesSwarms]]}
-                                        colors={["#36A2EB", "#FFD700", "#FF6384", "#FFA500"]} />
+                                    <ColumnChart data={[["Splits", this.state.summationIncreasesSplits], ["Packages", this.state.summationIncreasesPackages], ["Nucs", this.state.summationIncreasesNucs], ["Swarms", this.state.summationIncreasesSwarms]]}
+                                        colors={["#FF0000", "#FF0000", "#FF0000", "#FF0000"]} />
                                 </div>
                             </div>
                         </div>

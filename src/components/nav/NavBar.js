@@ -33,7 +33,7 @@ export default class NavBar extends Component {
                     {/* <img className="" src={WVIcon} alt="Beeport Logo" height="5%" width="5%"></img> */}
                     <ul className="nav nav-pills">
                         <li className="nav-item dropdown text-center">
-                            <Link className="nav-link whiter-text" to="/home"><HomeIcon /><br />Home</Link>
+                            <Link className="nav-link white-text" to="/home"><HomeIcon /><br />Home</Link>
                         </li>
                         <li className="nav-item text-center">
                             <Link className="nav-link white-text" to="/about"><InfoIcon /><br />About</Link>
@@ -45,7 +45,7 @@ export default class NavBar extends Component {
                             <Link className="nav-link white-text" to="/apregs"><RegIcon /><br />Apiary Registration</Link>
                         </li>
                         <li className="nav-item text-center">
-                            <Link className="nav-link white-text" to="/report"><ChartIcon /><br />Bee Reports</Link>
+                            <Link className="nav-link white-text" to="/report"><ChartIcon /><br />WV Bee Reports</Link>
                         </li>
                         <li className="nav-item text-center">
                             <Link className="nav-link white-text" to="/pollinate"><NatureIcon /><br />Pollination Svcs.</Link>

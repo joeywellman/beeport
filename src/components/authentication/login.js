@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import './login.css'
-import Beeport from "./Beeport.jpg"
-import userManager from "./userManager";
+import Beeport from "./BeeportInv.jpg"
+import userManager from "./userManager"
+import YoutubeBackground from 'react-youtube-background';
 
 
 export default class Login extends Component {
@@ -74,60 +75,77 @@ export default class Login extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleLogin}>
-                    {/* <h1 className="font-weight-bold">Beeport</h1> */}
-                    <a href="http://localhost:3000/home"><img src={Beeport} alt="Beeport Logo" height="20%" width="20%"></img></a>
-                    <h2 className="h3 mb-3 header-text"><b>Existing Users</b>
-                        <br />Please Sign In:</h2>
-                    <br />
-                    <div className="form-group-auto">
-                        <div className="col-auto">
-                            <label htmlFor="userEmail">
-                                Email Address
-                            </label>
-                            <input onChange={this.handleFieldChange} type="email"
-                                id="userEmail"
-                                placeholder="Email Address"
-                                required="" autoFocus="" />
-                        </div>
-                        <br />
-                        <div className="col-auto">
-                            <label htmlFor="inputPassword">
-                                User Password
-                            </label>
-                            <input onChange={this.handleFieldChange} type="password"
-                                id="userPassword"
-                                placeholder="Password"
-                                required="" />
-                        </div>
+                <div className="video-background">
+                    <div className="video-foreground">
+                        <YoutubeBackground id="myVideo"
+                            videoId="Tk0rj0-npTI"
+                            overlay="(0, 0, 0, 0.5)" // defaults -> null | e.g. "rgba(0,0,0,.4)"
+                            nocookie
+                            // aspectRatio={"16:9"} // default -> "16:9"
+                            className="myVideo">
+                        </YoutubeBackground>
                     </div>
-                    <br />
-                    <label htmlFor="rememberMe">
-                        Remember Me
+                    <div id="vidtop-content">
+                        <div className="vid-info">
+                        </div>
+                        <form onSubmit={this.handleLogin}>
+                            <br /><br />
+                            {/* <h1 className="font-weight-bold">Beeport</h1> */}
+                            <a href="http://localhost:3000/home"><img src={Beeport} alt="Beeport Logo" className="BeeportLogo" height="20%" width="20%"></img></a>
+                            <h2 className="h3 mb-3 header-text text-white"><b>Existing Users</b>
+                                <br />Please Sign In:</h2>
+                            <br />
+                            <div className="form-group-auto">
+                                <div className="col-auto">
+                                    <label htmlFor="userEmail">
+                                        Email Address
+                            </label>
+                                    <input onChange={this.handleFieldChange} type="email"
+                                        id="userEmail"
+                                        placeholder="Email Address"
+                                        required="" autoFocus="" />
+                                </div>
+                                <br />
+                                <div className="col-auto">
+                                    <label htmlFor="inputPassword">
+                                        User Password
+                            </label>
+                                    <input onChange={this.handleFieldChange} type="password"
+                                        id="userPassword"
+                                        placeholder="Password"
+                                        required="" />
+                                </div>
+                            </div>
+                            <br />
+                            <label htmlFor="rememberMe">
+                                Remember Me
                     </label>
-                    <input onChange={this.handleCheckbox} type="checkbox"
-                        id="rememberMe"
-                        placeholder=""
-                        required="" autoFocus="" />
-                    <br />
-                    <br />
-                    <button type="submit"
-                        className="btn btn-info">
-                        <b>Sign In</b>
-                    </button>
-                </form>
-                <section>
-                    <h2 className="h3 mb-3 header-text"><b>New Users</b>
-                        <br />Register Account:</h2>
-                    <br></br>
-                    <button type="register" onClick={() => this.props.history.push("/register")}
-                        id="newUserReg"
-                        className="btn btn-success">
-                        <b>Register New User</b>
-                    </button>
-                    <br />
-                    <br />
-                </section>
+                            <input onChange={this.handleCheckbox} type="checkbox"
+                                id="rememberMe"
+                                placeholder=""
+                                required="" autoFocus="" />
+                            <br />
+                            <br />
+                            <button type="submit"
+                                className="btn btn-info">
+                                <b>Sign In</b>
+                            </button>
+                        </form>
+                        <section>
+                            <h2 className="h3 mb-3 header-text text-white"><b>New Users</b>
+                                <br />Register Account:</h2>
+                            <br></br>
+                            <button type="register" onClick={() => this.props.history.push("/register")}
+                                id="newUserReg"
+                                className="btn btn-success">
+                                <b>Register New User</b>
+                            </button>
+                            <br />
+                            <br />
+                        </section>
+                        <br />
+                    </div>
+                </div>
             </div>
         )
     }

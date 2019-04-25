@@ -1,4 +1,45 @@
 .header-text {
     color: black;
     text-align: center;
+    /* margin-bottom: 0px !important; */
+}
+
+.small-font {
+    font-size: 10pt;
+}
+
+.center-details {
+    text-align: center;
+}
+
+.divForm {
+    text-align: center;
+    /* margin-top: 0px !important; */
+}
+
+.block-right {
+    display: inline-block;
+    text-align: right;
+}
+
+/* form {
+    align-content: right;
+} */
+
+.info-margins {
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.bumpup-img {
+    margin-top: -100;
+}
+
+.bumpup-img-2 {
+    margin-top: -75px;
+    filter: rgb(75, 75, 75); /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
