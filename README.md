@@ -29,7 +29,7 @@ This is a Front-End Capstone for WV's [NewForce Program](https://newforce.co/).
 - [X] JavaScript
 - [ ] ~~jQuery~~
 - [ ] ~~jQuery BackgroundVideo~~
-- [X] [JavaScript Object Notation](https://github.com/typicode/json-server) (JSON) Server
+- [X] [JavaScript Object Notation](https://github.com/typicode/json-server) (JSON) [Server](https://github.com/typicode/json-server)
 - [ ] ~~Mapbox~~
 - [X] [Materialize](https://materializecss.com/)
 - [X] [Microsoft Excel](https://products.office.com/en-us/excel)
